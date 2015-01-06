@@ -1,0 +1,12 @@
+//Comment
+#startYear:2000
+#endYear:2015
+#timelineResultFileName: 2000-2015
+#timelineTitleName: 2000-2015
+#timelineWebName:2000-2015
+#timelineVersion: 0.01
+#timelineAuthorLine: Mike
+#timelineAuthorLink: http://www.nkbtr.org
+#artboardWidthPixels: 9000
+#artboardHeightPixels: 1000
+//28.07.1914,11.11.1918, Первая мировая война, 100, g

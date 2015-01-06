@@ -2,11 +2,19 @@ String.prototype.splitrim = function(t){
 	return this.split(new RegExp('\s*'+t+'\s*'))
 }
 
+function forEach(collection, fn) {
+	var n = collection.length;
+	for(var i=0; i<n; ++i) {
+		fn(collection[i]);
+	}
+}
+
 var conf = {
 	myDocument: null,
 	templateFileName: "template.ai",
 	timelineResultFileName: null,
-	datesFileName: "1935-1947.txt",
+	timelineWebName: null,
+	datesFileName: "1913-1924.txt",
 	templateObjectsLayerName: "",
 	yearScaleTemplateObjectName: "",
 	eventTemplateObjectName: "",
@@ -66,6 +74,7 @@ var conf = {
 				this.setupVal("startYear", line);
 				this.setupVal("endYear", line);
 				this.setupVal("timelineResultFileName", line);
+				this.setupVal("timelineWebName", line);
 				this.setupVal("timelineTitleName", line);
 				this.setupVal("timelineVersion", line);
 				this.setupVal("timelineAuthorLine", line);
@@ -236,6 +245,33 @@ var builder = {
 	}
 }
 
+var exportTimeline = {
+	conf: null,
+	exportFileToPNG24: function() {
+		if ( app.documents.length > 0 ) {
+			var exportOptions = new ExportOptionsPNG24();
+			var type = ExportType.PNG24;
+			var file = new File(this.conf.timelineWebName);
+			exportOptions.antiAliasing = false;
+			exportOptions.transparency = false;
+			exportOptions.saveAsHTML = false;
+			app.activeDocument.exportFile( file, type, exportOptions );
+		}
+	},
+	saveFileToPDF: function() {
+		var doc = app.activeDocument;
+		if ( app.documents.length > 0 ) {
+			var file = new File(this.conf.timelineWebName);
+			saveOpts = new PDFSaveOptions();
+			saveOpts.compatibility = PDFCompatibility.ACROBAT5;
+			saveOpts.generateThumbnails = true;
+			saveOpts.preserveEditability = true;
+			doc.saveAs(file, saveOpts);
+		}
+}
+
+};
+
 conf.readTimelineSetup();
 conf.openIllustratorFile();
 
@@ -247,9 +283,13 @@ builder.drawScale();
 builder.drawEventsAndPeriods();
 builder.drawDetails();
 
+exportTimeline.conf = conf;
+exportTimeline.saveFileToPDF();
+
 conf.close();
 
 //Nado vivodit preduprejdenie o starom stile.
 //Ukazivat kalendar u dati
+//God sokrati do dvuh cifr
 
 // vim: tabstop=4 softtabstop=0 noexpandtab shiftwidth=4 number
