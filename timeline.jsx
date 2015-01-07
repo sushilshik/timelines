@@ -273,6 +273,8 @@ var exportTimeline = {
 			saveOpts.compatibility = PDFCompatibility.ACROBAT7;
 			saveOpts.generateThumbnails = true;
 			saveOpts.preserveEditability = false;
+			saveOpts.optimization = true;
+			saveOpts.generateThumbnails = false;
 			doc.saveAs(file, saveOpts);
 		}
 	}
