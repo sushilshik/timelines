@@ -21,11 +21,9 @@ timelineWebName = !(match_data = datesFile.match(pattern)).nil? ? match_data[1] 
 
 system('C:\Program Files\Adobe\Adobe Illustrator CC 2014 (32 Bit)\Support Files\Contents\Windows\Illustrator.exe','C:\Users\mike\Desktop\timeline\timeline.jsx')
 
-pdfFileName = timelineWebName+".pdf"
+FileUtils.copy(timelineWebName+".pdf", "z:\\")
 
-FileUtils.copy(pdfFileName, "z:\\")
-
-p pdfFileName
+p timelineWebName
 
 #File.open("log.txt", "a") { |file| file << appendLine+"\n" }
 # vim: tabstop=4 softtabstop=0 noexpandtab shiftwidth=4 number

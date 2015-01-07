@@ -14,7 +14,7 @@ var conf = {
 	templateFileName: "template.ai",
 	timelineResultFileName: null,
 	timelineWebName: null,
-	datesFileName: "1913-1924.txt",
+	datesFileName: "1930-1947.txt",
 	templateObjectsLayerName: "",
 	yearScaleTemplateObjectName: "",
 	eventTemplateObjectName: "",
@@ -242,6 +242,10 @@ var builder = {
 			x = x + 30;
 			y = y + 30;
 		}
+	},
+	finishingTouch: function() {
+		this.templateLayer.visible = true;;
+		this.templateLayer.remove();
 	}
 }
 
@@ -249,12 +253,16 @@ var exportTimeline = {
 	conf: null,
 	exportFileToPNG24: function() {
 		if ( app.documents.length > 0 ) {
-			var exportOptions = new ExportOptionsPNG24();
-			var type = ExportType.PNG24;
+			//var exportOptions = new ExportOptionsPNG24();
+			var exportOptions = new ExportOptionsJPEG();
+			//var type = ExportType.PNG24;
+			var type = ExportType.JPEG;
 			var file = new File(this.conf.timelineWebName);
 			exportOptions.antiAliasing = false;
-			exportOptions.transparency = false;
-			exportOptions.saveAsHTML = false;
+			//exportOptions.transparency = false;
+			//exportOptions.saveAsHTML = false;
+			exportOptions.horizontalScale = 50;
+			exportOptions.verticalScale = 50;
 			app.activeDocument.exportFile( file, type, exportOptions );
 		}
 	},
@@ -263,9 +271,9 @@ var exportTimeline = {
 		if ( app.documents.length > 0 ) {
 			var file = new File(this.conf.timelineWebName);
 			saveOpts = new PDFSaveOptions();
-			saveOpts.compatibility = PDFCompatibility.ACROBAT5;
+			saveOpts.compatibility = PDFCompatibility.ACROBAT7;
 			saveOpts.generateThumbnails = true;
-			saveOpts.preserveEditability = true;
+			saveOpts.preserveEditability = false;
 			doc.saveAs(file, saveOpts);
 		}
 }
@@ -282,9 +290,12 @@ builder.drawArtboard();
 builder.drawScale();
 builder.drawEventsAndPeriods();
 builder.drawDetails();
+builder.finishingTouch();
 
 exportTimeline.conf = conf;
 exportTimeline.saveFileToPDF();
+//TODO size limits
+//exportTimeline.exportFileToPNG24;
 
 conf.close();
 
