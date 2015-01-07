@@ -1,3 +1,4 @@
+#encoding: utf-8
 require 'fileutils'
 
 datesFileName = ARGV[0]
