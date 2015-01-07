@@ -271,7 +271,6 @@ var exportTimeline = {
 			var file = new File(this.conf.timelineWebName);
 			saveOpts = new PDFSaveOptions();
 			saveOpts.compatibility = PDFCompatibility.ACROBAT7;
-			saveOpts.generateThumbnails = true;
 			saveOpts.preserveEditability = false;
 			saveOpts.optimization = true;
 			saveOpts.generateThumbnails = false;
