@@ -42,7 +42,6 @@ var conf = {
 	    }
 	},
 	close: function() {
-		this.saveIllustratorFile();
 		app.quit();
 	},
 	readTimelineSetup: function() {  
@@ -276,7 +275,7 @@ var exportTimeline = {
 			saveOpts.preserveEditability = false;
 			doc.saveAs(file, saveOpts);
 		}
-}
+	}
 
 };
 
@@ -294,9 +293,8 @@ builder.finishingTouch();
 
 exportTimeline.conf = conf;
 exportTimeline.saveFileToPDF();
-//TODO size limits
-//exportTimeline.exportFileToPNG24;
 
+//conf.saveIllustratorFile();
 conf.close();
 
 //Nado vivodit preduprejdenie o starom stile.

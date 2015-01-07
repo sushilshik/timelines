@@ -22,7 +22,7 @@ timelineWebName = !(match_data = datesFile.match(pattern)).nil? ? match_data[1] 
 
 system('C:\Program Files\Adobe\Adobe Illustrator CC 2014 (32 Bit)\Support Files\Contents\Windows\Illustrator.exe','C:\Users\mike\Desktop\timeline\timeline.jsx')
 
-FileUtils.copy(timelineWebName+".pdf", "z:\\")
+FileUtils.move(timelineWebName+".pdf", "z:\\")
 
 p timelineWebName
 
