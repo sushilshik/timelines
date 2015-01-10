@@ -23,7 +23,7 @@ timelineWebName = !(match_data = datesFile.match(pattern)).nil? ? match_data[1] 
 
 system(illustrator_exe, timeline_jsx)
 
-if ARGV[2] != nil && ARGV[2].lenght > 0 && ARGV[2] == "move_pdf" && File.directory?(pdf_goal_dir)
+if ARGV[2] != nil && ARGV[2].length > 0 && ARGV[2] == "move_pdf" && File.directory?(pdf_goal_dir)
 	FileUtils.move(timelineWebName+".pdf", pdf_goal_dir)
 end
 
