@@ -21,7 +21,9 @@ var conf = {
 	periodTemplateObjectName: "",
 	startYear: null,
 	endYear: null,
-	timelineTitleName: "",
+	timelineTitleLine: "",
+	timelineDateLine: "",
+	timelineCommenLine: "",
 	timelineVersion: "",
 	timelineAuthorLine: "",
 	timelineAuthorLink: "",
@@ -75,7 +77,9 @@ var conf = {
 				this.setupVal("endYear", line);
 				this.setupVal("timelineResultFileName", line);
 				this.setupVal("timelineWebName", line);
-				this.setupVal("timelineTitleName", line);
+				this.setupVal("timelineTitleLine", line);
+				this.setupVal("timelineDateLine", line);
+				this.setupVal("timelineCommentLine", line);
 				this.setupVal("timelineVersion", line);
 				this.setupVal("timelineAuthorLine", line);
 				this.setupVal("timelineAuthorLink", line);
@@ -192,6 +196,7 @@ var builder = {
 		var myTextFrame = this.conf.myDocument.textFrames.add();
 		myTextFrame.position = [x,y];
 		myTextFrame.contents = text;
+		return myTextFrame;
 	},
 	drawArtboard: function() {
 		this.conf.myDocument.artboards[0].artboardRect = 
@@ -231,20 +236,20 @@ var builder = {
 		return diffStartEvent / diffStartEnd;
 	},
 	drawDetails: function() {
-		//TODO
-	},
-	drawTestLinesFromSetupFile: function() {
-		var dates = this.conf.readInCSV();
-		var x = 230;
-		var y = 230;
-		for (var i = 0; i < dates.length; i++) {
-			this.newTextFrame(dates[i][0], x, y);
-			x = x + 30;
-			y = y + 30;
-		}
+		var centerX = this.conf.artboardWidthPixels/2;
+		var titleY = this.conf.artboardHeightPixels - this.conf.artboardHeightPixels/30;
+		var title = this.newTextFrame(this.conf.timelineTitleLine, centerX, titleY);
+		title.textRange.paragraphs[0].paragraphAttributes.justification = Justification.CENTER;
+		title.textRange.paragraphs[0].characterAttributes.size = 30;
+		var date = new Date();
+		var comment = this.conf.timelineDateLine + ": " + date.getDate()+"-"+(date.getMonth()+1)+"-"+date.getFullYear() + ". ";
+		comment += this.conf.timelineCommentLine;
+		var commentFrame = this.newTextFrame(comment, centerX, titleY - 40);
+		commentFrame.textRange.paragraphs[0].paragraphAttributes.justification = Justification.CENTER;
+		commentFrame.textRange.paragraphs[0].characterAttributes.size = 15;
 	},
 	finishingTouch: function() {
-		this.templateLayer.visible = true;;
+		this.templateLayer.visible = true;
 		this.templateLayer.remove();
 	}
 }
@@ -295,12 +300,10 @@ builder.finishingTouch();
 
 exportTimeline.conf = conf;
 exportTimeline.saveFileToPDF();
-//TODO size limits
-//exportTimeline.exportFileToPNG24;
 
 conf.close();
 
-//Nado vivodit preduprejdenie o starom stile.
+//Vivodit preduprejdenie o starom stile v datah
 //Ukazivat kalendar u dati
 //God sokrati do dvuh cifr
 

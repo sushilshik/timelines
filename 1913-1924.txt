@@ -2,7 +2,9 @@
 #startYear:1913
 #endYear:1924
 #timelineResultFileName: Великая Октябрьская Социалистическая Революция 1913-1924
-#timelineTitleName:Великая Октябрьская Социалистическая Революция 1913-1924
+#timelineTitleLine:Великая Октябрьская Социалистическая Революция 1913-1924
+#timelineDateLine: Сгенерировано 
+#timelineCommentLine: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
 #timelineWebName:revolution_1913-1924
 #timelineVersion: 0.01
 #timelineAuthorLine: Mike
