@@ -107,7 +107,7 @@
         <div class="masthead">
             <ul class="nav nav-pills pull-right">
                 <li><a href="/timelines">Главная</a></li>
-                <li class="active"><a href="about.html">Что это?</a></li>
+                <li class="active"><a href="about.php">Что это?</a></li>
                 <li><a href="https://github.com/sushilshik/timelines">Код</a></li>
             </ul>
             <h3 class="muted">Таймлайны</h3>
@@ -146,11 +146,11 @@
             него на&nbsp;windows&nbsp;7) и&nbsp;ruby 2.2. В файле timeline.rb пропишите переменной illustrator_exe путь до файла illustrator.exe в вашей системе. Откройте cmd.exe и&nbsp;в&nbsp;директории проекта запустите
             команду &laquo;ruby timelines.rb 1913-1924.txt&raquo;. Из&nbsp;&laquo;исходников&raquo; файла 1913-1924.txt
             построится таймлайн о&nbsp;первой мировой, революции и&nbsp;гражданской. Код &laquo;наколеночный&raquo;&nbsp;&mdash;
-            you are warned. And you are welcome.</p>
+            you are warned. And you are welcome.</  p>
 
         <h5>Почему под Illustrator?</h5>
 
-        <p>А&nbsp;почему не&nbsp;в&nbsp;Inkscape, или не&nbsp;сразу в&nbsp;SVG, или вообще в&nbsp;TeX? В&nbsp;принципе
+        <p>Почему не&nbsp;в&nbsp;Inkscape, или не&nbsp;сразу в&nbsp;SVG, или вообще в&nbsp;TeX? В&nbsp;принципе
             ничто не&nbsp;мешает потом написать скрипты, которые на&nbsp;основе &laquo;исходников&raquo; таймланов будут
             строить схемы в&nbsp;перечисленных форматах. Потом. А&nbsp;причина выбора Illustrator, во-первых, в&nbsp;возможности
             в&nbsp;перспективе отправить pdf (или ai&nbsp;файл&nbsp;&mdash; в&nbsp;скрипте можно включить сохранение в
@@ -170,7 +170,7 @@
             Если и&nbsp;день и&nbsp;месяц в&nbsp;году не&nbsp;известны точно&nbsp;&mdash; пишем, например, &laquo;(m-)&raquo;.
             Если день месяца точно не&nbsp;известен, то&nbsp;в&nbsp;&laquo;исходном коде&raquo; пишем 15-ый день, если
             аналогичная ситуация с&nbsp;месяцем, то&nbsp;прописываем &laquo;07&raquo; (июль). Если более-менее точный
-            день или месяц известны, но&nbsp;вы&nbsp;не&nbsp;уверены&nbsp;&mdash; указываете точную цифру, но&nbsp;все
+            день или месяц известны, но&nbsp;вы&nbsp;не&nbsp;уверены&nbsp;&mdash; указываете известную цифру, но&nbsp;все
             равно добавляйте пометку. Для описываемых одной датой исторических событий в&nbsp;аналогичных случаях ставим
             пометку в&nbsp;скобках, но&nbsp;уже без тире, например &laquo;(d)&raquo;. Эти правила не&nbsp;окончательные,
             будем вместе дорабатывать.</p>
@@ -204,6 +204,8 @@
     <p></p>
   </div>
 </div>
+
+<?php include_once("../analyticstracking.php"); ?>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

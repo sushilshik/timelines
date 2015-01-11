@@ -46,7 +46,7 @@
                         </div>
                         <div class="navbar-collapse collapse navbar-inverse-collapse">
                             <ul class="nav navbar-nav">
-                                <li><a href="about.html">Что это?</a></li>
+                                <li><a href="about.php">Что это?</a></li>
                                 <li><a href="https://github.com/sushilshik/timelines">Код</a></li>
                                 <!--<li class="active"><a href="#">Active</a></li>-->
                                 <!--<li><a href="#">Link</a></li>-->
@@ -150,6 +150,7 @@
     </div>
 </div>
 
+<?php include_once("../analyticstracking.php"); ?>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
