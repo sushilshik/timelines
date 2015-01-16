@@ -2,6 +2,9 @@
 require 'sinatra'
 require 'cgi'
 
+get '/check_connection' do
+  'ok'
+end
 get '/timeline' do
   datesFileName = CGI.unescape(params[:file])
   line = !params[:line].nil? ? params[:line] : ""
