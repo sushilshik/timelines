@@ -1,18 +1,17 @@
 ﻿//Comment
-#startYear:2010
-#endYear:2030
-#timelineResultFileName: Будущее 2010-2030
-#timelineTitleLine: Будущее 2010-2030
+#startYear:1907
+#endYear:1974
+#timelineResultFileName: efremov
+#timelineTitleLine: Биография Ивана Антоновича Ефремова
 #timelineDateLine: Сгенерировано 
 #timelineCommentLine: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
-#timelineWebName:future_2010-2030
+#timelineWebName:efremov
 #timelineVersion: 0.01
 #timelineAuthorLine: Mike
 #timelineAuthorLink: http://www.nkbtr.org
-#timelineScaleType: default
+#timelineScaleType: century
 #artboardWidthPixels: 9000
-#artboardHeightPixels: 1000
-14.06.2018,15.07.2018,Чемпионат мира по Футболу,50,g
-15.07.2018,,Президентские выборы в РФ (m),40,g
-04.12.2016,,Выборы в ГД,30,g
-08.11.2016,,Президентские выборы в США,40,g
+#artboardHeightPixels: 600
+22.06.1941,09.05.1945,Великая Отечественная война, 70, g
+22.04.1908,,Рождение, 70, g
+05.10.1972,,Ушел из жизни, 70, g

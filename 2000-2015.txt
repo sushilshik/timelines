@@ -9,6 +9,7 @@
 #timelineVersion: 0.01
 #timelineAuthorLine: Mike
 #timelineAuthorLink: http://www.nkbtr.org
+#timelineScaleType: default
 #artboardWidthPixels: 9000
 #artboardHeightPixels: 1000
 15.02.2011,23.10.2011,Гражданская война в Ливии,80,g

@@ -1,18 +1,16 @@
 ﻿//Comment
-#startYear:2010
-#endYear:2030
-#timelineResultFileName: Будущее 2010-2030
-#timelineTitleLine: Будущее 2010-2030
+#startYear:-2300
+#endYear:1600
+#timelineResultFileName: ancient
+#timelineTitleLine: Древность
 #timelineDateLine: Сгенерировано 
 #timelineCommentLine: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
-#timelineWebName:future_2010-2030
+#timelineWebName:ancient
 #timelineVersion: 0.01
 #timelineAuthorLine: Mike
 #timelineAuthorLink: http://www.nkbtr.org
-#timelineScaleType: default
-#artboardWidthPixels: 9000
-#artboardHeightPixels: 1000
-14.06.2018,15.07.2018,Чемпионат мира по Футболу,50,g
-15.07.2018,,Президентские выборы в РФ (m),40,g
-04.12.2016,,Выборы в ГД,30,g
-08.11.2016,,Президентские выборы в США,40,g
+#timelineScaleType: millennium
+#artboardWidthPixels: 13000
+#artboardHeightPixels: 800
+01.01.-1323,01.01.1332,ц. Тутанхамон, 70, g
+12.10.1492,,Открытие Америки, 70, g
