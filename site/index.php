@@ -138,6 +138,16 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="thumbnail">
+                <a href="http://nkbtr.org/down/timelines/ancient.pdf"><img
+                        src="http://nkbtr.org/down/timelines/ancient.jpg"></a>
+                <div class="caption">
+                    <h4>Древность и Средние века</h4>
+                    <p>2599 до н. э. - 1599 н. э.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
