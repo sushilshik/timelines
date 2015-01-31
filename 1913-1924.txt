@@ -9,6 +9,7 @@
 #timelineVersion: 0.01
 #timelineAuthorLine: Mike
 #timelineAuthorLink: http://www.nkbtr.org
+#timelineScaleType: default
 #artboardWidthPixels: 8000
 #artboardHeightPixels: 1000
 28.07.1914,11.11.1918, Первая мировая война, 100, g

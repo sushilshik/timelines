@@ -14,7 +14,7 @@ var conf = {
 	templateFileName: "template.ai",
 	timelineResultFileName: null,
 	timelineWebName: null,
-	datesFileName: "2000-2015.txt",
+	datesFileName: "ancient.txt",
 	templateObjectsLayerName: "",
 	yearScaleTemplateObjectName: "",
 	eventTemplateObjectName: "",
@@ -27,6 +27,7 @@ var conf = {
 	timelineVersion: "",
 	timelineAuthorLine: "",
 	timelineAuthorLink: "",
+	timelineScaleType: "",
 	eventsArray: [],
 	periodsArray: [],
 	artboardWidthPixels: null,
@@ -67,7 +68,7 @@ var conf = {
 	setupVal: function(name, line) {
 		var r = new RegExp("^#"+name+":\s*(.*)\s*$");
 		if (line.match(r) != null && line.match(r).length == 2) {
-			this[name] = line.match(r)[1];
+			this[name] = line.match(r)[1].replace(/^\s+|\s+$/gm,'');;
 		}
 	},
 	parseSetupLine: function (line) {
@@ -83,6 +84,7 @@ var conf = {
 				this.setupVal("timelineVersion", line);
 				this.setupVal("timelineAuthorLine", line);
 				this.setupVal("timelineAuthorLink", line);
+				this.setupVal("timelineScaleType", line);
 				this.setupVal("artboardWidthPixels", line);
 				this.setupVal("artboardHeightPixels", line);
 			} else {
@@ -116,7 +118,7 @@ function newEvent(eventData, builder) {
 			eTFcaption.contents = this.caption;
 			eTFdate.contents = this.date;
 
-			eIX = this.bldr.timelineDatePosition(this.date) * this.bldr.conf.artboardWidthPixels;
+			eIX = this.bldr.timelineDatePosition(this.date);
 
 			this.eventItem.position = [eIX,this.bldr.distanceBetweenYearScaleAndArtboardBottom+this.eventItem.height];
 		}
@@ -146,8 +148,8 @@ function newPeriod(periodData, builder) {
 			pTFcaption.contents = this.caption;
 			pTFdate.contents = this.startDate+"-"+this.endDate;
 
-			pIXStart = this.bldr.timelineDatePosition(this.startDate) * this.bldr.conf.artboardWidthPixels;
-			pIXEnd = this.bldr.timelineDatePosition(this.endDate) * this.bldr.conf.artboardWidthPixels;
+			pIXStart = this.bldr.timelineDatePosition(this.startDate);
+			pIXEnd = this.bldr.timelineDatePosition(this.endDate);
 
 			this.periodItem.position = [pIXStart,this.bldr.distanceBetweenYearScaleAndArtboardBottom+this.periodItem.height];
 			path2.width = pIXEnd - pIXStart;
@@ -157,31 +159,123 @@ function newPeriod(periodData, builder) {
 	};
 }
 
-var builder = {
+var scale = {
 	conf: null,
-	timelineLayer: null,
-	templateLayer: null,
 	yearScale: null,
-	eventItem: null,
-	periodItem: null,
+	timelineLayer: null,
+	centuryScale: null,
+	bcCenturyScale: null,
 	yearScaleShift: 1.2,
-	headShift: 0.1,
-	minEventOrPeriodLegsHeight: 50,
+	yearScaleShiftHeight: 0,
 	scaleYearsCount: null,
 	scalesSizeProportion: null,
 	scalesSizeProportionPercents: null,
 	distanceBetweenYearScaleAndArtboardBottom: null,
+	scaleHeight: null,
+	drawScale: function() {
+		this.yearScale = this.conf.myDocument.groupItems["yearScale"];
+		this.centuryScale = this.conf.myDocument.groupItems["centuryScale"];
+		this.bcCenturyScale = this.conf.myDocument.groupItems["bcCenturyScale"];
+		if (this.conf.timelineScaleType == "default") {
+			this.scaleYearsCount = this.conf.endYear - this.conf.startYear + 1;
+			this.scalesSizeProportion = this.conf.artboardWidthPixels/(this.yearScale.width*this.scaleYearsCount);
+			this.scalesSizeProportionPercents = this.scalesSizeProportion*100;
+			this.distanceBetweenYearScaleAndArtboardBottom = this.yearScale.height*this.yearScaleShift*this.scalesSizeProportion;
+			this.drawScaleDefault();
+		}
+		if (this.conf.timelineScaleType == "century") {
+			this.scaleYearsCount = this.conf.endYear - this.conf.startYear + 1;
+			this.scalesSizeProportion = this.conf.artboardWidthPixels/(this.yearScale.width*this.scaleYearsCount);
+			this.scalesSizeProportionPercents = this.scalesSizeProportion*100;
+			this.distanceBetweenYearScaleAndArtboardBottom = this.yearScale.height * this.scalesSizeProportion + 10;
+			this.drawScaleCentury();
+		}
+		if (this.conf.timelineScaleType == "millennium") {
+			this.scaleYearsCount = (this.conf.endYear - this.conf.startYear)/100;
+			this.scalesSizeProportion = this.conf.artboardWidthPixels/(this.centuryScale.width*this.scaleYearsCount);
+			this.scalesSizeProportionPercents = this.scalesSizeProportion*100;
+			this.distanceBetweenYearScaleAndArtboardBottom = this.centuryScale.height*this.yearScaleShift*this.scalesSizeProportion;
+			this.drawScaleMillennium();
+		}
+		this.scaleHeight = this.distanceBetweenYearScaleAndArtboardBottom+this.yearScale.height*this.scalesSizeProportion;
+	},
+	drawScaleDefault: function() {
+		var pX = 0;
+		for (var i = this.conf.startYear; i <= this.conf.endYear; i++) {
+			var yS = this.yearScale.duplicate(this.timelineLayer);
+			yS.resize(this.scalesSizeProportionPercents, this.scalesSizeProportionPercents);
+			var fins = yS.groupItems["finsAndNumbers"].groupItems["fins"].pathItems;
+			for (var j = 0; j < fins.length; j++ ) {
+				fins[j].strokeWidth = fins[j].strokeWidth * this.scalesSizeProportion;
+			}
+
+			var yearScaleTextFrame = yS.textFrames["year"];
+			yearScaleTextFrame.contents = i;
+
+			yS.position = [pX,this.distanceBetweenYearScaleAndArtboardBottom];
+			pX = pX + yS.width;
+		}	
+	},
+	drawScaleCentury: function() {
+		var pX = 0;
+		for (var i = this.conf.startYear; i <= this.conf.endYear; i++) {
+			var yS = this.yearScale.duplicate(this.timelineLayer);
+			yS.resize(this.scalesSizeProportionPercents, this.scalesSizeProportionPercents);
+			var fins = yS.groupItems["finsAndNumbers"].groupItems["fins"].pathItems;
+			for (var j = 0; j < fins.length; j++ ) {
+				fins[j].strokeWidth = fins[j].strokeWidth * this.scalesSizeProportion;
+			}
+
+			var yearScaleTextFrame = yS.textFrames["year"];
+			yearScaleTextFrame.contents = i;
+
+			yearScaleTextFrame.textRange.paragraphs[0].characterAttributes.size = 12;
+			yearScaleTextFrame.top = yearScaleTextFrame.top - 8;
+
+			yS.position = [pX,this.distanceBetweenYearScaleAndArtboardBottom];
+			pX = pX + yS.width;
+		}	
+	},
+	drawScaleMillennium: function() {
+		var pX = 0;
+		for (var i = this.conf.startYear; i <= this.conf.endYear; i += 100) {
+			var cS = null;
+			if (i < 0) {
+				cS = this.bcCenturyScale.duplicate(this.timelineLayer);
+			} else {
+				cS = this.centuryScale.duplicate(this.timelineLayer);
+			}
+			cS.resize(this.scalesSizeProportionPercents, this.scalesSizeProportionPercents);
+			var fins = cS.groupItems["fins"].pathItems;
+			for (var j = 0; j < fins.length; j++ ) {
+				fins[j].strokeWidth = fins[j].strokeWidth * this.scalesSizeProportion;
+			}
+
+			var centuryScaleTextFrame = cS.textFrames["century"];
+			centuryScaleTextFrame.contents = i;
+
+			cS.position = [pX,this.distanceBetweenYearScaleAndArtboardBottom];
+			pX = pX + cS.width;
+		}	
+	},
+}
+
+var builder = {
+	conf: null,
+	scale: null,
+	timelineLayer: null,
+	templateLayer: null,
+	eventItem: null,
+	periodItem: null,
+	headShift: 0.1,
+	minEventOrPeriodLegsHeight: 50,
 	eventsAndPeriodsObjectsArray: [],
+	scaleHeight: null,
 	prepareObjects: function() {
 		this.timelineLayer = this.conf.myDocument.layers["timelineLayer"];  
 		this.templateLayer = this.conf.myDocument.layers["templateLayer"];  
-		this.yearScale = this.conf.myDocument.groupItems["yearScale"];
 		this.eventItem = this.conf.myDocument.groupItems["eventItem"];
 		this.periodItem = this.conf.myDocument.groupItems["periodItem"];
-		this.scaleYearsCount = this.conf.endYear - this.conf.startYear + 1;
-		this.scalesSizeProportion = this.conf.artboardWidthPixels/(this.yearScale.width*this.scaleYearsCount);
-		this.scalesSizeProportionPercents = this.scalesSizeProportion*100;
-		this.distanceBetweenYearScaleAndArtboardBottom = this.yearScale.height*this.yearScaleShift*this.scalesSizeProportion;
 		for (var i = 0; i < this.conf.eventsArray.length; i++) {
 			var eData = this.conf.eventsArray[i];
 			this.eventsAndPeriodsObjectsArray.push(newEvent(eData,this));
@@ -202,26 +296,21 @@ var builder = {
 		this.conf.myDocument.artboards[0].artboardRect = 
 			[0,this.conf.artboardHeightPixels,this.conf.artboardWidthPixels,0];
 	},
-	drawScale: function() {
-		var pX = 0;
-		for (var i = this.conf.startYear; i <= this.conf.endYear; i++) {
-			var yS = this.yearScale.duplicate(this.timelineLayer);
-			yS.resize(this.scalesSizeProportionPercents, this.scalesSizeProportionPercents);
-			yS.position = [pX,this.distanceBetweenYearScaleAndArtboardBottom];
-			pX = pX + yS.width;
-			var yearScaleTextFrames = yS.textFrames["year"];
-			yearScaleTextFrames.contents = i;
-		}	
-	},
 	drawEventsAndPeriods: function() {
 		for (var i = 0; i < this.eventsAndPeriodsObjectsArray.length; i++) {
 			this.eventsAndPeriodsObjectsArray[i].draw();
 		}
 	},
 	eventOrPeriodHeight: function(heightPercent) {
-		var scaleHeight = this.distanceBetweenYearScaleAndArtboardBottom+this.yearScale.height*this.scalesSizeProportion;
-		var verticalTimelineFreeField = this.conf.artboardHeightPixels*(1-this.headShift) - scaleHeight;
+		var verticalTimelineFreeField = this.conf.artboardHeightPixels*(1-this.headShift) - this.scaleHeight;
 		return this.minEventOrPeriodLegsHeight + verticalTimelineFreeField*heightPercent/100;
+	},
+	daysBetween: function(date1, date2) {
+		var ONE_DAY = 1000 * 60 * 60 * 24
+		var date1_ms = date1.getTime()
+		var date2_ms = date2.getTime()
+		var difference_ms = Math.abs(date1_ms - date2_ms)
+		return Math.round(difference_ms/ONE_DAY)
 	},
 	timelineDatePosition: function(dateLine) {
 		var date = dateLine.split(".");
@@ -229,11 +318,15 @@ var builder = {
 		var month = parseInt(date[1],10)-1;
 		var year = parseInt(date[2],10);	
 		var now = new Date(year, month, day);
-		var start = new Date(this.conf.startYear, 0, 0);
-		var end = new Date(this.conf.endYear+1, 0, 0);
-		var diffStartEvent = now - start;
-		var diffStartEnd = end - start;
-		return diffStartEvent / diffStartEnd;
+		now.setFullYear(year);
+		var start = new Date(0, 0, 0);
+		start.setFullYear(this.conf.startYear-1);
+		var end = new Date(0, 0, 0);
+		end.setFullYear(this.conf.endYear);
+		var allDaysInTimeLine = this.daysBetween(start,end);
+		var daysFromStartToPosition = this.daysBetween(start,now);
+		var dateXPositionInPixels = (this.conf.artboardWidthPixels/allDaysInTimeLine)*daysFromStartToPosition;
+		return dateXPositionInPixels;
 	},
 	drawDetails: function() {
 		var centerX = this.conf.artboardWidthPixels/2;
@@ -282,18 +375,24 @@ var exportTimeline = {
 			saveOpts.generateThumbnails = false;
 			doc.saveAs(file, saveOpts);
 		}
-}
-
+	}
 };
 
 conf.readTimelineSetup();
 conf.openIllustratorFile();
 
 builder.conf = conf;
+builder.scale = scale;
 builder.prepareObjects();
 
+scale.conf = conf;
+scale.timelineLayer = builder.timelineLayer;
+scale.drawScale();
+
+builder.scaleHeight = scale.scaleHeight;
+builder.distanceBetweenYearScaleAndArtboardBottom = scale.distanceBetweenYearScaleAndArtboardBottom;
+
 builder.drawArtboard();
-builder.drawScale();
 builder.drawEventsAndPeriods();
 builder.drawDetails();
 builder.finishingTouch();
