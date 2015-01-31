@@ -14,7 +14,7 @@ var conf = {
 	templateFileName: "template.ai",
 	timelineResultFileName: null,
 	timelineWebName: null,
-	datesFileName: "ancient.txt",
+	datesFileName: "1930-1947.txt",
 	templateObjectsLayerName: "",
 	yearScaleTemplateObjectName: "",
 	eventTemplateObjectName: "",
@@ -164,6 +164,7 @@ var scale = {
 	yearScale: null,
 	timelineLayer: null,
 	centuryScale: null,
+	zeroCenturyScale: null,
 	bcCenturyScale: null,
 	yearScaleShift: 1.2,
 	yearScaleShiftHeight: 0,
@@ -175,6 +176,7 @@ var scale = {
 	drawScale: function() {
 		this.yearScale = this.conf.myDocument.groupItems["yearScale"];
 		this.centuryScale = this.conf.myDocument.groupItems["centuryScale"];
+		this.zeroCenturyScale = this.conf.myDocument.groupItems["zeroCenturyScale"];
 		this.bcCenturyScale = this.conf.myDocument.groupItems["bcCenturyScale"];
 		if (this.conf.timelineScaleType == "default") {
 			this.scaleYearsCount = this.conf.endYear - this.conf.startYear + 1;
@@ -240,8 +242,12 @@ var scale = {
 		var pX = 0;
 		for (var i = this.conf.startYear; i <= this.conf.endYear; i += 100) {
 			var cS = null;
+			var centuryCaption = i;
 			if (i < 0) {
 				cS = this.bcCenturyScale.duplicate(this.timelineLayer);
+			} else if (i == 0) {
+				cS = this.zeroCenturyScale.duplicate(this.timelineLayer);
+				centuryCaption = 1;
 			} else {
 				cS = this.centuryScale.duplicate(this.timelineLayer);
 			}
@@ -252,7 +258,7 @@ var scale = {
 			}
 
 			var centuryScaleTextFrame = cS.textFrames["century"];
-			centuryScaleTextFrame.contents = i;
+			centuryScaleTextFrame.contents = centuryCaption;
 
 			cS.position = [pX,this.distanceBetweenYearScaleAndArtboardBottom];
 			pX = pX + cS.width;
