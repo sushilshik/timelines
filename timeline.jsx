@@ -14,7 +14,7 @@ var conf = {
 	templateFileName: "template.ai",
 	timelineResultFileName: null,
 	timelineWebName: null,
-	datesFileName: "ancient.txt",
+	datesFileName: "1913-1924.txt",
 	templateObjectsLayerName: "",
 	yearScaleTemplateObjectName: "",
 	eventTemplateObjectName: "",
