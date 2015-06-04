@@ -12,6 +12,15 @@
 #timelineScaleType: default
 #artboardWidthPixels: 9000
 #artboardHeightPixels: 1000
+#timelineDefaultScaleMonthsFontSizeRatio: 1
+#timelineDefaultScaleYearFontSizeRatio: 1
+#timelineDefaultScaleMonthXSpaceRatio: 1
+#timelineDefaultScaleMonthYSpaceRatio: 1
+#timelineDefaultScaleYearXSpaceRatio: 1
+#timelineDefaultScaleYearYSpaceRatio: 1
+#timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio: 1.2
+#timelineDefaultScaleFinsHeightRatio: 1
+#timelineDefaultScaleFinsSizeWidthRatio: 1
 15.02.2011,23.10.2011,Гражданская война в Ливии,80,g
 20.10.2011,,Смерть Каддафи,50,g
 20.03.2003,01.05.2003,Вторжение в Ирак,60,g

@@ -12,6 +12,15 @@
 #timelineScaleType: default
 #artboardWidthPixels: 9000
 #artboardHeightPixels: 800
+#timelineDefaultScaleMonthsFontSizeRatio: 1
+#timelineDefaultScaleYearFontSizeRatio: 2
+#timelineDefaultScaleMonthXSpaceRatio: 1
+#timelineDefaultScaleMonthYSpaceRatio: 1
+#timelineDefaultScaleYearXSpaceRatio: 1
+#timelineDefaultScaleYearYSpaceRatio: 1.1
+#timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio: 1.4
+#timelineDefaultScaleFinsHeightRatio: 1
+#timelineDefaultScaleFinsSizeWidthRatio: 1
 09.06.1672,, Рождение, 70, g
 16.11.1673,, Родился Меньшиков, 70, g
 23.11.1729,, Умер Меньшиков, 70, g

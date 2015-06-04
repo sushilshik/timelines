@@ -12,6 +12,15 @@
 #timelineScaleType: default
 #artboardWidthPixels: 9000
 #artboardHeightPixels: 1000
+#timelineDefaultScaleMonthsFontSizeRatio: 1
+#timelineDefaultScaleYearFontSizeRatio: 1
+#timelineDefaultScaleMonthXSpaceRatio: 1
+#timelineDefaultScaleMonthYSpaceRatio: 1
+#timelineDefaultScaleYearXSpaceRatio: 1
+#timelineDefaultScaleYearYSpaceRatio: 1
+#timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio: 1.2
+#timelineDefaultScaleFinsHeightRatio: 1
+#timelineDefaultScaleFinsSizeWidthRatio: 1
 14.06.2018,15.07.2018,Чемпионат мира по Футболу,50,g
 15.07.2018,,Президентские выборы в РФ (m),40,g
 04.12.2016,,Выборы в ГД,30,g

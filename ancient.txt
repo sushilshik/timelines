@@ -12,6 +12,15 @@
 #timelineScaleType: millennium
 #artboardWidthPixels: 14000
 #artboardHeightPixels: 800
+#timelineDefaultScaleMonthsFontSizeRatio: 1
+#timelineDefaultScaleYearFontSizeRatio: 1
+#timelineDefaultScaleMonthXSpaceRatio: 1
+#timelineDefaultScaleMonthYSpaceRatio: 1
+#timelineDefaultScaleYearXSpaceRatio: 1
+#timelineDefaultScaleYearYSpaceRatio: 1
+#timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio: 1.2
+#timelineDefaultScaleFinsHeightRatio: 1
+#timelineDefaultScaleFinsSizeWidthRatio: 1
 15.07.-1332,15.07.-1323,ц. Тутанхамон, 70, g
 15.07.-1370,15.07.-1330,Нефертити, 60, g
 12.10.1492,,Открытие Америки, 80, g

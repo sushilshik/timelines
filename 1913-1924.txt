@@ -12,6 +12,15 @@
 #timelineScaleType: default
 #artboardWidthPixels: 8000
 #artboardHeightPixels: 1000
+#timelineDefaultScaleMonthsFontSizeRatio: 1
+#timelineDefaultScaleYearFontSizeRatio: 1
+#timelineDefaultScaleMonthXSpaceRatio: 1
+#timelineDefaultScaleMonthYSpaceRatio: 1
+#timelineDefaultScaleYearXSpaceRatio: 1
+#timelineDefaultScaleYearYSpaceRatio: 1
+#timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio: 1.2
+#timelineDefaultScaleFinsHeightRatio: 1
+#timelineDefaultScaleFinsSizeWidthRatio: 1
 28.07.1914,11.11.1918, Первая мировая война, 100, g
 03.07.1916,22.09.1916, Брусиловский прорыв, 15, g
 08.03.1917,17.03.1917, Февральская буржуазная революция, 10, g
