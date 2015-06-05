@@ -14,7 +14,8 @@ var conf = {
 	templateFileName: "template.ai",
 	timelineResultFileName: null,
 	timelineWebName: null,
-	datesFileName: "cybersyn.txt",
+	datesFileName: "peter_the_great.txt",
+	timelineLang: "en",
 	templateObjectsLayerName: "",
 	yearScaleTemplateObjectName: "",
 	eventTemplateObjectName: "",
@@ -117,13 +118,20 @@ var conf = {
 	}
 }
 
+function lng(data) {
+	var caption = "";
+	if (this.conf.timelineLang == "ru") { caption = data[2]; }
+	if (this.conf.timelineLang == "en") { caption = data[3]; }
+	return caption;
+}
+
 function newEvent(eventData, builder) {
 	return {
 		bldr: builder,
-		caption: eventData[2],
+		caption: lng(eventData),
 		date: eventData[0],
-		height: parseInt(eventData[3],10),
-		kalend: eventData[4],
+		height: parseInt(eventData[4],10),
+		kalend: eventData[5],
 		eventItem: null,
 		draw: function() {
 			this.eventItem = this.bldr.eventItem.duplicate(this.bldr.timelineLayer);
@@ -146,11 +154,11 @@ function newEvent(eventData, builder) {
 function newPeriod(periodData, builder) {
 	return {
 		bldr: builder,
-		caption: periodData[2],
+		caption: lng(periodData),
 		startDate: periodData[0],
 		endDate: periodData[1],
-		height: parseInt(periodData[3],10),
-		kalend: periodData[4],
+		height: parseInt(periodData[4],10),
+		kalend: periodData[5],
 		periodItem: null,
 		draw: function() {
 			this.periodItem = this.bldr.periodItem.duplicate(this.bldr.timelineLayer);
