@@ -15,7 +15,7 @@ var conf = {
 	timelineResultFileName: null,
 	timelineWebName: null,
 	datesFileName: "peter_the_great.txt",
-	timelineLang: "en",
+	timelineLang: "ru",
 	templateObjectsLayerName: "",
 	yearScaleTemplateObjectName: "",
 	eventTemplateObjectName: "",
@@ -147,6 +147,13 @@ function newEvent(eventData, builder) {
 			eIX = this.bldr.timelineDatePosition(this.date);
 
 			this.eventItem.position = [eIX,this.bldr.scalePositionX+this.eventItem.height];
+			this.eventItem.uRL = "asdf";
+			var tagList = this.eventItem.tags;
+			if (tagList.length == 0) {
+				var tag = tagList.add();
+				tag.name = "OneWord";
+				tag.value = "anything you want";
+			}
 		}
 	};
 }
@@ -411,10 +418,12 @@ var exportTimeline = {
 		if ( app.documents.length > 0 ) {
 			var file = new File(this.conf.timelineWebName);
 			saveOpts = new PDFSaveOptions();
-			saveOpts.compatibility = PDFCompatibility.ACROBAT7;
+			saveOpts.compatibility = PDFCompatibility.ACROBAT5;
+			saveOpts.pDFXStandard = PDFXStandard.PDFXNONE;
 			saveOpts.preserveEditability = false;
 			saveOpts.optimization = true;
 			saveOpts.generateThumbnails = false;
+			saveOpts.enablePlainText = false;
 			doc.saveAs(file, saveOpts);
 		}
 	}
