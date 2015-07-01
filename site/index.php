@@ -148,6 +148,26 @@
                 </div>
             </div>
         </div>
+		 <div class="row">
+            <div class="thumbnail">
+                <a href="http://nkbtr.org/down/timelines/peter_the_great.pdf"><img
+                        src="http://nkbtr.org/down/timelines/peter_the_great.jpg"></a>
+                <div class="caption">
+                    <h4>Петр Первый</h4>
+                    <p>1672-1725</p>
+                </div>
+            </div>
+        </div>
+		 <div class="row">
+            <div class="thumbnail">
+                <a href="http://nkbtr.org/down/timelines/cybersyn.pdf"><img
+                        src="http://nkbtr.org/down/timelines/cybersyn.jpg"></a>
+                <div class="caption">
+                    <h4>Киберсин</h4>
+                    <p>1970-1973</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>

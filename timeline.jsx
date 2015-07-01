@@ -14,7 +14,8 @@ var conf = {
 	templateFileName: "template.ai",
 	timelineResultFileName: null,
 	timelineWebName: null,
-	datesFileName: "1913-1924.txt",
+	datesFileName: "peter_the_great.txt",
+	timelineLang: "ru",
 	templateObjectsLayerName: "",
 	yearScaleTemplateObjectName: "",
 	eventTemplateObjectName: "",
@@ -28,6 +29,15 @@ var conf = {
 	timelineAuthorLine: "",
 	timelineAuthorLink: "",
 	timelineScaleType: "",
+	timelineDefaultScaleYearFontSizeRatio: "",
+	timelineDefaultScaleMonthXSpaceRatio: "",
+	timelineDefaultScaleMonthYSpaceRatio: "",
+	timelineDefaultScaleYearXSpaceRatio: "",
+	timelineDefaultScaleYearYSpaceRatio: "",
+	timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio: "",
+	timelineDefaultScaleFinsHeightRatio: "",
+	timelineDefaultScaleFinsSizeWidthRatio: "",
+	timelineDefaultScaleMonthsFontSizeRatio: "",
 	eventsArray: [],
 	periodsArray: [],
 	artboardWidthPixels: null,
@@ -87,6 +97,15 @@ var conf = {
 				this.setupVal("timelineScaleType", line);
 				this.setupVal("artboardWidthPixels", line);
 				this.setupVal("artboardHeightPixels", line);
+				this.setupVal("timelineDefaultScaleYearFontSizeRatio", line);
+				this.setupVal("timelineDefaultScaleMonthXSpaceRatio", line);
+				this.setupVal("timelineDefaultScaleMonthYSpaceRatio", line);
+				this.setupVal("timelineDefaultScaleYearXSpaceRatio", line);
+				this.setupVal("timelineDefaultScaleYearYSpaceRatio", line);
+				this.setupVal("timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio", line);
+				this.setupVal("timelineDefaultScaleFinsHeightRatio", line);
+				this.setupVal("timelineDefaultScaleFinsSizeWidthRatio", line);
+				this.setupVal("timelineDefaultScaleMonthsFontSizeRatio", line);
 			} else {
 				csvArray = line.splitrim(',');  
 				if (csvArray[1].length != 0) {
@@ -99,13 +118,20 @@ var conf = {
 	}
 }
 
+function lng(data) {
+	var caption = "";
+	if (this.conf.timelineLang == "ru") { caption = data[2]; }
+	if (this.conf.timelineLang == "en") { caption = data[3]; }
+	return caption;
+}
+
 function newEvent(eventData, builder) {
 	return {
 		bldr: builder,
-		caption: eventData[2],
+		caption: lng(eventData),
 		date: eventData[0],
-		height: parseInt(eventData[3],10),
-		kalend: eventData[4],
+		height: parseInt(eventData[4],10),
+		kalend: eventData[5],
 		eventItem: null,
 		draw: function() {
 			this.eventItem = this.bldr.eventItem.duplicate(this.bldr.timelineLayer);
@@ -120,7 +146,14 @@ function newEvent(eventData, builder) {
 
 			eIX = this.bldr.timelineDatePosition(this.date);
 
-			this.eventItem.position = [eIX,this.bldr.distanceBetweenYearScaleAndArtboardBottom+this.eventItem.height];
+			this.eventItem.position = [eIX,this.bldr.scalePositionX+this.eventItem.height];
+			this.eventItem.uRL = "asdf";
+			var tagList = this.eventItem.tags;
+			if (tagList.length == 0) {
+				var tag = tagList.add();
+				tag.name = "OneWord";
+				tag.value = "anything you want";
+			}
 		}
 	};
 }
@@ -128,11 +161,11 @@ function newEvent(eventData, builder) {
 function newPeriod(periodData, builder) {
 	return {
 		bldr: builder,
-		caption: periodData[2],
+		caption: lng(periodData),
 		startDate: periodData[0],
 		endDate: periodData[1],
-		height: parseInt(periodData[3],10),
-		kalend: periodData[4],
+		height: parseInt(periodData[4],10),
+		kalend: periodData[5],
 		periodItem: null,
 		draw: function() {
 			this.periodItem = this.bldr.periodItem.duplicate(this.bldr.timelineLayer);
@@ -151,7 +184,7 @@ function newPeriod(periodData, builder) {
 			pIXStart = this.bldr.timelineDatePosition(this.startDate);
 			pIXEnd = this.bldr.timelineDatePosition(this.endDate);
 
-			this.periodItem.position = [pIXStart,this.bldr.distanceBetweenYearScaleAndArtboardBottom+this.periodItem.height];
+			this.periodItem.position = [pIXStart,this.bldr.scalePositionX+this.periodItem.height];
 			path2.width = pIXEnd - pIXStart;
 			path3.position = [pIXEnd,path3.top];
 
@@ -166,13 +199,12 @@ var scale = {
 	centuryScale: null,
 	zeroCenturyScale: null,
 	bcCenturyScale: null,
-	yearScaleShift: 1.2,
 	yearScaleShiftHeight: 0,
 	scaleYearsCount: null,
 	scalesSizeProportion: null,
 	scalesSizeProportionPercents: null,
-	distanceBetweenYearScaleAndArtboardBottom: null,
-	scaleHeight: null,
+	scalePositionX: null,
+	//scaleHeight: null,
 	drawScale: function() {
 		this.yearScale = this.conf.myDocument.groupItems["yearScale"];
 		this.centuryScale = this.conf.myDocument.groupItems["centuryScale"];
@@ -182,24 +214,24 @@ var scale = {
 			this.scaleYearsCount = this.conf.endYear - this.conf.startYear + 1;
 			this.scalesSizeProportion = this.conf.artboardWidthPixels/(this.yearScale.width*this.scaleYearsCount);
 			this.scalesSizeProportionPercents = this.scalesSizeProportion*100;
-			this.distanceBetweenYearScaleAndArtboardBottom = this.yearScale.height*this.yearScaleShift*this.scalesSizeProportion;
+			this.scalePositionX = this.yearScale.height*this.scalesSizeProportion*this.conf.timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio;
 			this.drawScaleDefault();
 		}
 		if (this.conf.timelineScaleType == "century") {
 			this.scaleYearsCount = this.conf.endYear - this.conf.startYear + 1;
 			this.scalesSizeProportion = this.conf.artboardWidthPixels/(this.yearScale.width*this.scaleYearsCount);
 			this.scalesSizeProportionPercents = this.scalesSizeProportion*100;
-			this.distanceBetweenYearScaleAndArtboardBottom = this.yearScale.height * this.scalesSizeProportion + 10;
+			this.scalePositionX = this.yearScale.height * this.scalesSizeProportion*this.conf.timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio + 10;
 			this.drawScaleCentury();
 		}
 		if (this.conf.timelineScaleType == "millennium") {
 			this.scaleYearsCount = (this.conf.endYear - this.conf.startYear)/100;
 			this.scalesSizeProportion = this.conf.artboardWidthPixels/(this.centuryScale.width*this.scaleYearsCount);
 			this.scalesSizeProportionPercents = this.scalesSizeProportion*100;
-			this.distanceBetweenYearScaleAndArtboardBottom = this.centuryScale.height*this.yearScaleShift*this.scalesSizeProportion;
+			this.scalePositionX = this.centuryScale.height*this.scalesSizeProportion*this.conf.timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio;
 			this.drawScaleMillennium();
 		}
-		this.scaleHeight = this.distanceBetweenYearScaleAndArtboardBottom+this.yearScale.height*this.scalesSizeProportion;
+		//this.scaleHeight = this.tboardBottom+this.yearScale.height*this.scalesSizeProportion;
 	},
 	drawScaleDefault: function() {
 		var pX = 0;
@@ -208,13 +240,24 @@ var scale = {
 			yS.resize(this.scalesSizeProportionPercents, this.scalesSizeProportionPercents);
 			var fins = yS.groupItems["finsAndNumbers"].groupItems["fins"].pathItems;
 			for (var j = 0; j < fins.length; j++ ) {
-				fins[j].strokeWidth = fins[j].strokeWidth * this.scalesSizeProportion;
+				fins[j].strokeWidth = fins[j].strokeWidth * this.scalesSizeProportion*this.conf.timelineDefaultScaleFinsSizeWidthRatio;
+				fins[j].resize(100, 100*this.conf.timelineDefaultScaleFinsHeightRatio);
+			}
+
+			var months = yS.groupItems["finsAndNumbers"].groupItems["months"].textFrames;
+			for (var j = 0; j < months.length; j++ ) {
+				months[j].textRange.paragraphs[0].characterAttributes.size = months[j].textRange.paragraphs[0].characterAttributes.size*this.conf.timelineDefaultScaleMonthsFontSizeRatio;
+				months[j].top = months[j].top*this.conf.timelineDefaultScaleMonthYSpaceRatio;
+				months[j].left = months[j].left*this.conf.timelineDefaultScaleMonthXSpaceRatio;
 			}
 
 			var yearScaleTextFrame = yS.textFrames["year"];
 			yearScaleTextFrame.contents = i;
+			yearScaleTextFrame.textRange.paragraphs[0].characterAttributes.size = yearScaleTextFrame.textRange.paragraphs[0].characterAttributes.size*this.conf.timelineDefaultScaleYearFontSizeRatio;
+			yearScaleTextFrame.top = yearScaleTextFrame.top*this.conf.timelineDefaultScaleYearYSpaceRatio;
+			yearScaleTextFrame.left = yearScaleTextFrame.left*this.conf.timelineDefaultScaleYearXSpaceRatio;
 
-			yS.position = [pX,this.distanceBetweenYearScaleAndArtboardBottom];
+			yS.position = [pX,this.scalePositionX];
 			pX = pX + yS.width;
 		}	
 	},
@@ -234,7 +277,7 @@ var scale = {
 			yearScaleTextFrame.textRange.paragraphs[0].characterAttributes.size = 12;
 			yearScaleTextFrame.top = yearScaleTextFrame.top - 8;
 
-			yS.position = [pX,this.distanceBetweenYearScaleAndArtboardBottom];
+			yS.position = [pX,this.scalePositionX];
 			pX = pX + yS.width;
 		}	
 	},
@@ -260,7 +303,7 @@ var scale = {
 			var centuryScaleTextFrame = cS.textFrames["century"];
 			centuryScaleTextFrame.contents = centuryCaption;
 
-			cS.position = [pX,this.distanceBetweenYearScaleAndArtboardBottom];
+			cS.position = [pX,this.scalePositionX];
 			pX = pX + cS.width;
 		}	
 	},
@@ -273,10 +316,10 @@ var builder = {
 	templateLayer: null,
 	eventItem: null,
 	periodItem: null,
-	headShift: 0.1,
+	headShift: 0.15,
 	minEventOrPeriodLegsHeight: 50,
 	eventsAndPeriodsObjectsArray: [],
-	scaleHeight: null,
+	//scaleHeight: null,
 	prepareObjects: function() {
 		this.timelineLayer = this.conf.myDocument.layers["timelineLayer"];  
 		this.templateLayer = this.conf.myDocument.layers["templateLayer"];  
@@ -308,7 +351,7 @@ var builder = {
 		}
 	},
 	eventOrPeriodHeight: function(heightPercent) {
-		var verticalTimelineFreeField = this.conf.artboardHeightPixels*(1-this.headShift) - this.scaleHeight;
+		var verticalTimelineFreeField = this.conf.artboardHeightPixels*(1-this.headShift) - this.scalePositionX;
 		return this.minEventOrPeriodLegsHeight + verticalTimelineFreeField*heightPercent/100;
 	},
 	daysBetween: function(date1, date2) {
@@ -375,10 +418,12 @@ var exportTimeline = {
 		if ( app.documents.length > 0 ) {
 			var file = new File(this.conf.timelineWebName);
 			saveOpts = new PDFSaveOptions();
-			saveOpts.compatibility = PDFCompatibility.ACROBAT7;
+			saveOpts.compatibility = PDFCompatibility.ACROBAT5;
+			saveOpts.pDFXStandard = PDFXStandard.PDFXNONE;
 			saveOpts.preserveEditability = false;
 			saveOpts.optimization = true;
 			saveOpts.generateThumbnails = false;
+			saveOpts.enablePlainText = false;
 			doc.saveAs(file, saveOpts);
 		}
 	}
@@ -395,8 +440,8 @@ scale.conf = conf;
 scale.timelineLayer = builder.timelineLayer;
 scale.drawScale();
 
-builder.scaleHeight = scale.scaleHeight;
-builder.distanceBetweenYearScaleAndArtboardBottom = scale.distanceBetweenYearScaleAndArtboardBottom;
+//builder.ight = scale.scaleHeight;
+builder.scalePositionX = scale.scalePositionX;
 
 builder.drawArtboard();
 builder.drawEventsAndPeriods();

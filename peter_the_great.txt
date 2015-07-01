@@ -1,0 +1,50 @@
+﻿//Comment
+#startYear:1670
+#endYear:1730
+#timelineResultFileName: Петр Первый
+#timelineTitleLine:Петр Первый
+#timelineDateLine: Сгенерировано 
+#timelineCommentLine: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineWebName:peter_the_great
+#timelineVersion: 0.01
+#timelineAuthorLine: Mike
+#timelineAuthorLink: http://www.nkbtr.org
+#timelineScaleType: default
+#artboardWidthPixels: 9000
+#artboardHeightPixels: 800
+#timelineDefaultScaleMonthsFontSizeRatio: 1
+#timelineDefaultScaleYearFontSizeRatio: 2
+#timelineDefaultScaleMonthXSpaceRatio: 1
+#timelineDefaultScaleMonthYSpaceRatio: 1
+#timelineDefaultScaleYearXSpaceRatio: 1
+#timelineDefaultScaleYearYSpaceRatio: 1.1
+#timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio: 1.4
+#timelineDefaultScaleFinsHeightRatio: 1
+#timelineDefaultScaleFinsSizeWidthRatio: 1
+09.06.1672,, Рождение,Birth, 70, g
+16.11.1673,, Родился Меньшиков,Menshikov was born, 70, g
+23.11.1729,, Умер Меньшиков,Menshikov died, 70, g
+08.02.1725,, Ушел из жизни,Died, 70, g
+02.11.1721,, Император,Emperor, 70, g
+07.05.1682,, Царь,Tsar, 70, g
+27.01.1689,, Венчание с Лопухиной,Wedding with Lopukhina, 70, g
+25.08.1702,, Взят Мариенбург,Marienburg was taken, 70, g
+23.09.1698,, Лопухина отправлена в монастырь,Lopukhina banished to the Convent, 55, g
+19.02.1712,, Венчание с Екатериной Алексеевной, Married Catherine, 70, g
+22.02.1700,10.09.1721, Северная война,Great Northern War, 90, g
+08.07.1709,, Полтавская битва,Battle of Poltava, 70, g
+20.11.1710,10.09.1713, Русской-турецкая война,Russo-Turkish War, 85, g
+28.02.1690,, Родился царевич Алексей,Tsarevich Alexei was born, 70, g
+07.07.1718,, Смерть царевича Алексея,Tsarevich Alexei died, 70, g
+10.03.1697,25.08.1698, Великое посольство,"Grand Embassy", 85, g
+07.05.1697,, В Кенигсберге,Königsberg, 40, g
+07.08.1697,, В Амстердаме,Amsterdam, 50, g
+10.01.1698,, В Англии,Great Britain, 60, g
+16.06.1698,, В Вене,Vienna, 70, g
+30.11.1700,, Битва при Нарве,Battle of Narva, 70, g
+26.08.1698,, Начал брить бороды,Cutting of beards, 80, g
+27.05.1703,, Основан Санкт-Петербург,Saint Petersburg founded, 65, g
+12.05.1703,, Взят Ниеншанц,Nyenschantz was taken, 75, g
+12.02.1700,, Умер Алексей Шеин,Aleksei Shein died, 25, g
+12.03.1699,, Умер Франц Лефорт,Franz Lefort died, 35, g
+29.11.1699,, Умер Патрик Гордон,Patrick Gordon died, 35, g

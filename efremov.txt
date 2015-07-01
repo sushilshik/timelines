@@ -12,6 +12,15 @@
 #timelineScaleType: century
 #artboardWidthPixels: 9000
 #artboardHeightPixels: 600
-22.06.1941,09.05.1945,Великая Отечественная война, 70, g
-22.04.1908,,Рождение, 70, g
-05.10.1972,,Ушел из жизни, 70, g
+#timelineDefaultScaleMonthsFontSizeRatio: 1
+#timelineDefaultScaleYearFontSizeRatio: 1
+#timelineDefaultScaleMonthXSpaceRatio: 1
+#timelineDefaultScaleMonthYSpaceRatio: 1
+#timelineDefaultScaleYearXSpaceRatio: 1
+#timelineDefaultScaleYearYSpaceRatio: 1
+#timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio: 1.2
+#timelineDefaultScaleFinsHeightRatio: 1
+#timelineDefaultScaleFinsSizeWidthRatio: 1
+22.06.1941,09.05.1945,Великая Отечественная война,, 70, g
+22.04.1908,,Рождение,, 70, g
+05.10.1972,,Ушел из жизни,, 70, g
