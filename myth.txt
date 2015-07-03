@@ -1,0 +1,82 @@
+//Comment
+#startYear:1600
+#endYear:2100
+#timelineResultFileName:myth
+#timelineTitleLineRu: Исследователи концепции мифа (17 в. - середина 20 в). По книге "Мифология", В. М. Найдыш, М., 2010.
+#timelineTitleLineEn: Mythographers from 17th to mid-20th century. Based on book "Мифология", В. М. Найдыш, М., 2010.
+#timelineCommentLineRu: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineCommentLineEn: Note: 'd' - means unknown, unclear day of birth, 'm' - unknown, unclear month of birth. If there is no certain information, then set "15" day and "07" month.
+#timelineWebName:myth
+#timelineVersion: 0.01
+#timelineAuthorLine: Mike
+#timelineAuthorLink: http://www.nkbtr.org
+#timelineScaleType: millennium
+#artboardWidthPixels: 9000
+#artboardHeightPixels: 1200
+#timelineMillenniumScaleYearsFontSizeRatio: 0.5
+#timelineMillenniumScaleCenturyFontSizeRatio: 0.45
+#timelineMillenniumScaleYearXSpaceRatio: 1
+#timelineMillenniumScaleYearYSpaceRatio: 0.7
+#timelineMillenniumScaleCenturyXSpaceRatio: 1
+#timelineMillenniumScaleCenturyYSpaceRatio: 0.5
+#timelineMillenniumScaleSpaceBetweenScaleAndArtboardBottomRatio: 0.35
+#timelineMillenniumScaleFinsHeightRatio: 0.3
+#timelineMillenniumScaleFinsSizeWidthRatio: 0.3
+#05.04.1588,04.12.1679,Гоббс,Hobbes, 1, g
+24.11.1632,21.02.1677,Спиноза,de Spinoza, 48, g
+02.02.1786,,Выступление Джонса о санскрите,Jones' discourse about the Sanscrit, 0, g
+23.06.1668,21.01.1744,Джамбаттиста Вико,Giambattista Vico, 50, g
+11.02.1657,09.01.1757,Фонтенель,Fontenelle, 54, g
+07.05.1711,25.08.1776,Юм,Hume, 8, g
+07.02.1709,07.05.1777,Шарль де Бросс,Charles de Brosses, 26, g
+22.04.1724,12.02.1804,Кант,Kant, 10, g
+10.11.1759,09.05.1805,Шиллер,Schiller, 52, g
+28.08.1749,03.05.1832,Гете,Goethe, 14, g
+15.07.1782,,Издана "Песнь о Нибелунгах"(m),Nibelungenlied published (m), 4, g
+10.03.1772,11.01.1829,Фридрих Шлегель,Friedrich Schlegel, 58, g
+#15.07.1743,24.10.1792,М.Д. Чулков,M.D. Chulkov, 22, g
+15.07.1765,,Поэмы Оссиана(m),The Works of Ossian (15), 0, g
+02.05.1772,25.03.1801,Новалис,Novalis, 54, g
+29.01.1688,29.03.1772,Сведенборг,Swedenborg, 6, g
+18.01.1743,24.10.1803,Сен-Мартен,Saint-Martin, 12, g
+15.07.1607,15.07.1681,Пордеч (m-m),Pordage (m-m), 60, g
+#15.07.1746,,Скончался Кирхвегер(m),Kirchweger died (m), 34, g
+10.03.1771,16.02.1858,Крейцер,Creuzer, 98, g
+27.01.1775,20.08.1854,Шеллинг,Schelling, 100, g
+04.01.1785,20.09.1863,Якоб Гримм,Jacob Grimm, 62, g
+24.02.1786,16.12.1859,Вильгельм Гримм,Wilhelm Grimm, 66, g
+22.06.1767,08.04.1835,Вильгельм Гумбольдт,Wilhelm Humboldt, 92, g
+#12.12.1766,03.06.1826,Карамзин,Karamzin, 82, g
+#1813-1826 - наибольшая активность Румянцевского кружка
+22.02.1788,21.09.1860,Шопенгауэр,Schopenhauer, 40, g
+27.08.1770,14.11.1831,Гегель,Hegel, 88, g
+22.12.1815,25.11.1887,Бахофен,Bachofen, 70, g
+19.01.1798,05.09.1857,Конт,Comte, 36, g
+27.04.1820,08.12.1903,Спенсер,Spencer, 72, g
+06.12.1823,28.10.1900,М. Мюллер,M. Muller, 10, g
+26.03.1831,25.12.1880,Маннгардт,Mannhardt, 0, g
+23.10.1834,21.10.1905,Узенер,Usener, 74, g
+02.10.1832,02.01.1917,Тайлор,Tylor, 12, g
+25.04.1818,12.07.1897,Буслаев,Buslaev, 8, g
+23.07.1826,05.09.1871,Афанасьев,Afanasyev, 46, g
+22.09.1835,11.12.1891,Потебня,Potebnja, 50, g
+16.02.1838,23.10.1906,Веселовский,Veselovsky, 76, g
+01.01.1854,07.05.1941,Фрэзер,Frazer, 14, g
+07.04.1884,16.05.1942,Малиновский,Malinowski, 90, g
+17.01.1881,24.10.1955,Рэдклифф-Браун,Radcliffe-Brown, 96, g
+22.05.1813,13.02.1883,Вагнер,Wagner, 4, g
+15.10.1844,25.08.1900,Ницше,Nietzsche, 52, g
+04.05.1776,14.08.1841,Гербарт,Herbart, 94, g
+16.08.1832,31.08.1920,Вундт,Wundt, 48, g
+06.05.1856,23.09.1939,Фрейд,Freud, 22, g
+26.07.1875,06.06.1961,Юнг,Jung, 30, g
+28.07.1874,13.04.1945,Кассирер,Cassirer, 18, g
+15.04.1858,15.11.1917,Дюркгейм,Durkheim, 28, g
+10.04.1857,13.03.1939,Леви-Брюль,Levy-Bruhl, 16, g
+28.11.1908,30.10.2009,Леви-Стросс,Levi-Strauss, 100, g
+28.04.1895,22.08.1970,Пропп,Propp, 98, g
+09.08.1896,16.09.1980,Пиаже,Piaget, 92, g
+17.11.1896,11.06.1934,Выготский,Vygotsky, 86, g
+#Потери букв
+#Русское и английское названия
+#Файлу отмечать en

@@ -33,7 +33,9 @@ def job(datesFileName, timelineLang, line, order)
 	system(illustrator_exe, timeline_jsx)
 
 	if order != nil && order.length > 0 && order == "move_pdf" && File.directory?(pdf_goal_dir)
-		FileUtils.move(timelineWebName+".pdf", pdf_goal_dir)
+		timelineWebNameLangSuffix = ""
+		timelineWebNameLangSuffix = "_en" if tmelineLang = "en"
+		FileUtils.move(timelineWebName+timelineWebNameLangSuffix+".pdf", pdf_goal_dir)
 	end
 
 	p timelineWebName
