@@ -173,8 +173,8 @@
                 <a href="http://nkbtr.org/down/timelines/myth.pdf"><img
                         src="http://nkbtr.org/down/timelines/myth.jpg"></a>
                 <div class="caption">
-                    <h4>Исследователи концепции мифа (17 в. &mdash; середина 20 в). По книге &laquo;Мифология&raquo;, В. М. Найдыш, М., 2010.</h4>
-                    <p></p>
+                    <h4>Исследователи концепции мифа (17 в. &mdash; середина 20 в)</h4>
+                    <p>По книге &laquo;Мифология&raquo;, В. М. Найдыш, М., 2010.</p>
                 </div>
             </div>
         </div>
@@ -188,7 +188,7 @@
 
 <div id="footer">
     <div class="container">
-        <p class="muted credit">Таймлайны 2014</p>
+        <p class="muted credit">Таймлайны 2014-2015</p>
 
         <p></p>
     </div>
