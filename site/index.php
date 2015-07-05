@@ -148,7 +148,7 @@
                 </div>
             </div>
         </div>
-		 <div class="row">
+	<div class="row">
             <div class="thumbnail">
                 <a href="http://nkbtr.org/down/timelines/peter_the_great.pdf"><img
                         src="http://nkbtr.org/down/timelines/peter_the_great.jpg"></a>
@@ -158,13 +158,23 @@
                 </div>
             </div>
         </div>
-		 <div class="row">
+	<div class="row">
             <div class="thumbnail">
                 <a href="http://nkbtr.org/down/timelines/cybersyn.pdf"><img
                         src="http://nkbtr.org/down/timelines/cybersyn.jpg"></a>
                 <div class="caption">
                     <h4>Киберсин</h4>
                     <p>1970-1973</p>
+                </div>
+            </div>
+        </div>
+	<div class="row">
+            <div class="thumbnail">
+                <a href="http://nkbtr.org/down/timelines/myth.pdf"><img
+                        src="http://nkbtr.org/down/timelines/myth.jpg"></a>
+                <div class="caption">
+                    <h4>Исследователи концепции мифа (17 в. &mdash; середина 20 в). По книге &laquo;Мифология&raquo;, В. М. Найдыш, М., 2010.</h4>
+                    <p></p>
                 </div>
             </div>
         </div>
