@@ -171,6 +171,10 @@
     </div>
 
 </div>
+<?php
+//$lang = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+//print $lang;
+?>
 
 <div id="footer">
     <div class="container">
