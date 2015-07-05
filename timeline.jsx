@@ -14,7 +14,7 @@ var conf = {
 	templateFileName: "template.ai",
 	timelineResultFileName: null,
 	timelineWebName: null,
-	datesFileName: "efremov.txt",
+	datesFileName: "myth.txt",
 	timelineLang: "ru",
 	templateObjectsLayerName: "",
 	yearScaleTemplateObjectName: "",

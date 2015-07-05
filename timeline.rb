@@ -1,10 +1,10 @@
 #encoding: UTF-8
 require 'fileutils'
 
-datesFileName = ARGV[0]
-timelineLang = ARGV[1]
-line = ARGV[2]
-order = ARGV[3]
+datesFileName = ARGV[0].strip
+timelineLang = ARGV[1].strip
+line = ARGV[2].strip
+order = ARGV[3].strip
 
 def job(datesFileName, timelineLang, line, order)
 
@@ -34,7 +34,7 @@ def job(datesFileName, timelineLang, line, order)
 
 	if order != nil && order.length > 0 && order == "move_pdf" && File.directory?(pdf_goal_dir)
 		timelineWebNameLangSuffix = ""
-		timelineWebNameLangSuffix = "_en" if tmelineLang == "en"
+		timelineWebNameLangSuffix = "_en" if timelineLang == "en"
 		FileUtils.move(timelineWebName+timelineWebNameLangSuffix+".pdf", pdf_goal_dir)
 	end
 
