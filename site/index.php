@@ -173,7 +173,7 @@
                 <a href="http://nkbtr.org/down/timelines/myth.pdf"><img
                         src="http://nkbtr.org/down/timelines/myth.jpg"></a>
                 <div class="caption">
-                    <h4>Исследователи концепции мифа (17 в. &mdash; середина 20 в)</h4>
+                    <h4>Исследователи концепции мифа (17 в. &mdash; середина 20 в.)</h4>
                     <p>По книге &laquo;Мифология&raquo;, В. М. Найдыш, М., 2010.</p>
                 </div>
             </div>
