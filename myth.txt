@@ -2,7 +2,7 @@
 #startYear:1600
 #endYear:2100
 #timelineResultFileName:myth
-#timelineTitleLineRu: Исследователи концепции мифа (17 в. - середина 20 в). По книге "Мифология", В. М. Найдыш, М., 2010.
+#timelineTitleLineRu: Исследователи концепции мифа (17 в. - середина 20 в.). По книге "Мифология", В. М. Найдыш, М., 2010.
 #timelineTitleLineEn: Mythographers from 17th to mid-20th century. Based on book "Мифология", В. М. Найдыш, М., 2010.
 #timelineCommentLineRu: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
 #timelineCommentLineEn: Note: 'd' - means unknown, unclear day of birth, 'm' - unknown, unclear month of birth. If there is no certain information, then set "15" day and "07" month.
