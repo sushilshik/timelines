@@ -14,16 +14,18 @@ var conf = {
 	templateFileName: "template.ai",
 	timelineResultFileName: null,
 	timelineWebName: null,
-	datesFileName: "cybersyn.txt",
+	datesFileName: "efremov.txt",
+	timelineLang: "ru",
 	templateObjectsLayerName: "",
 	yearScaleTemplateObjectName: "",
 	eventTemplateObjectName: "",
 	periodTemplateObjectName: "",
 	startYear: null,
 	endYear: null,
-	timelineTitleLine: "",
-	timelineDateLine: "",
-	timelineCommenLine: "",
+	timelineTitleLineRu: "",
+	timelineTitleLineEn: "",
+	timelineCommenLineRu: "",
+	timelineCommenLineEn: "",
 	timelineVersion: "",
 	timelineAuthorLine: "",
 	timelineAuthorLink: "",
@@ -37,6 +39,15 @@ var conf = {
 	timelineDefaultScaleFinsHeightRatio: "",
 	timelineDefaultScaleFinsSizeWidthRatio: "",
 	timelineDefaultScaleMonthsFontSizeRatio: "",
+	timelineMillenniumScaleCenturyFontSizeRatio: "",
+	timelineMillenniumScaleYearXSpaceRatio: "",
+	timelineMillenniumScaleYearYSpaceRatio: "",
+	timelineMillenniumScaleCenturyXSpaceRatio: "",
+	timelineMillenniumScaleCenturyYSpaceRatio: "",
+	timelineMillenniumScaleSpaceBetweenScaleAndArtboardBottomRatio: "",
+	timelineMillenniumScaleFinsHeightRatio: "",
+	timelineMillenniumScaleFinsSizeWidthRatio: "",
+	timelineMillenniumScaleYearsFontSizeRatio: "",
 	eventsArray: [],
 	periodsArray: [],
 	artboardWidthPixels: null,
@@ -87,9 +98,10 @@ var conf = {
 				this.setupVal("endYear", line);
 				this.setupVal("timelineResultFileName", line);
 				this.setupVal("timelineWebName", line);
-				this.setupVal("timelineTitleLine", line);
-				this.setupVal("timelineDateLine", line);
-				this.setupVal("timelineCommentLine", line);
+				this.setupVal("timelineTitleLineRu", line);
+				this.setupVal("timelineTitleLineEn", line);
+				this.setupVal("timelineCommentLineRu", line);
+				this.setupVal("timelineCommentLineEn", line);
 				this.setupVal("timelineVersion", line);
 				this.setupVal("timelineAuthorLine", line);
 				this.setupVal("timelineAuthorLink", line);
@@ -105,6 +117,15 @@ var conf = {
 				this.setupVal("timelineDefaultScaleFinsHeightRatio", line);
 				this.setupVal("timelineDefaultScaleFinsSizeWidthRatio", line);
 				this.setupVal("timelineDefaultScaleMonthsFontSizeRatio", line);
+				this.setupVal("timelineMillenniumScaleCenturyFontSizeRatio", line);
+				this.setupVal("timelineMillenniumScaleYearXSpaceRatio", line);
+				this.setupVal("timelineMillenniumScaleYearYSpaceRatio", line);
+				this.setupVal("timelineMillenniumScaleCenturyXSpaceRatio", line);
+				this.setupVal("timelineMillenniumScaleCenturyYSpaceRatio", line);
+				this.setupVal("timelineMillenniumScaleSpaceBetweenScaleAndArtboardBottomRatio", line);
+				this.setupVal("timelineMillenniumScaleFinsHeightRatio", line);
+				this.setupVal("timelineMillenniumScaleFinsSizeWidthRatio", line);
+				this.setupVal("timelineMillenniumScaleYearsFontSizeRatio", line);
 			} else {
 				csvArray = line.splitrim(',');  
 				if (csvArray[1].length != 0) {
@@ -117,13 +138,33 @@ var conf = {
 	}
 }
 
+var lang = {
+	conf: null,
+	caption: function(data) {
+		if (this.conf.timelineLang == "ru") return data[2]; 
+		if (this.conf.timelineLang == "en") return data[3]; 
+	},
+	titleLine: function() {
+		if (this.conf.timelineLang == "ru") return this.conf.timelineTitleLineRu;
+		if (this.conf.timelineLang == "en") return this.conf.timelineTitleLineEn;
+	},
+	commentLine: function() {
+		if (this.conf.timelineLang == "ru") return this.conf.timelineCommentLineRu;
+		if (this.conf.timelineLang == "en") return this.conf.timelineCommentLineEn;
+	},
+	webNameSuffix: function() {
+		if (this.conf.timelineLang == "ru") return "";
+		if (this.conf.timelineLang == "en") return "_en";
+	}
+}
+
 function newEvent(eventData, builder) {
 	return {
 		bldr: builder,
-		caption: eventData[2],
+		caption: lang.caption(eventData),
 		date: eventData[0],
-		height: parseInt(eventData[3],10),
-		kalend: eventData[4],
+		height: parseFloat(eventData[4]),
+		kalend: eventData[5],
 		eventItem: null,
 		draw: function() {
 			this.eventItem = this.bldr.eventItem.duplicate(this.bldr.timelineLayer);
@@ -133,12 +174,20 @@ function newEvent(eventData, builder) {
 
 			path1.height = this.bldr.eventOrPeriodHeight(this.height);
 
+			eIX = this.bldr.timelineDatePosition(this.date);
+
+			this.eventItem.position = [eIX.pixels,this.bldr.scalePositionX+this.eventItem.height];
+
 			eTFcaption.contents = this.caption;
 			eTFdate.contents = this.date;
 
-			eIX = this.bldr.timelineDatePosition(this.date);
-
-			this.eventItem.position = [eIX,this.bldr.scalePositionX+this.eventItem.height];
+			//this.eventItem.uRL = "asdf";
+			//var tagList = this.eventItem.tags;
+			//if (tagList.length == 0) {
+			//	var tag = tagList.add();
+			//	tag.name = "OneWord";
+			//	tag.value = "anything you want";
+			//}
 		}
 	};
 }
@@ -146,11 +195,11 @@ function newEvent(eventData, builder) {
 function newPeriod(periodData, builder) {
 	return {
 		bldr: builder,
-		caption: periodData[2],
+		caption: lang.caption(periodData),
 		startDate: periodData[0],
 		endDate: periodData[1],
-		height: parseInt(periodData[3],10),
-		kalend: periodData[4],
+		height: parseFloat(periodData[4]),
+		kalend: periodData[5],
 		periodItem: null,
 		draw: function() {
 			this.periodItem = this.bldr.periodItem.duplicate(this.bldr.timelineLayer);
@@ -163,15 +212,15 @@ function newPeriod(periodData, builder) {
 			path1.height = this.bldr.eventOrPeriodHeight(this.height);
 			path3.height = this.bldr.eventOrPeriodHeight(this.height);
 
-			pTFcaption.contents = this.caption;
-			pTFdate.contents = this.startDate+"-"+this.endDate;
-
 			pIXStart = this.bldr.timelineDatePosition(this.startDate);
 			pIXEnd = this.bldr.timelineDatePosition(this.endDate);
 
-			this.periodItem.position = [pIXStart,this.bldr.scalePositionX+this.periodItem.height];
-			path2.width = pIXEnd - pIXStart;
-			path3.position = [pIXEnd,path3.top];
+			pTFcaption.contents = this.caption;
+			pTFdate.contents = this.startDate+"-"+this.endDate;
+
+			this.periodItem.position = [pIXStart.pixels,this.bldr.scalePositionX+this.periodItem.height];
+			path2.width = pIXEnd.pixels - pIXStart.pixels;
+			path3.position = [pIXEnd.pixels,path3.top];
 
 		}
 	};
@@ -213,7 +262,7 @@ var scale = {
 			this.scaleYearsCount = (this.conf.endYear - this.conf.startYear)/100;
 			this.scalesSizeProportion = this.conf.artboardWidthPixels/(this.centuryScale.width*this.scaleYearsCount);
 			this.scalesSizeProportionPercents = this.scalesSizeProportion*100;
-			this.scalePositionX = this.centuryScale.height*this.scalesSizeProportion*this.conf.timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio;
+			this.scalePositionX = this.centuryScale.height*this.scalesSizeProportion*this.conf.timelineMillenniumScaleSpaceBetweenScaleAndArtboardBottomRatio;
 			this.drawScaleMillennium();
 		}
 		//this.scaleHeight = this.tboardBottom+this.yearScale.height*this.scalesSizeProportion;
@@ -246,6 +295,43 @@ var scale = {
 			pX = pX + yS.width;
 		}	
 	},
+	drawScaleMillennium: function() {
+		var pX = 0;
+		for (var i = this.conf.startYear; i <= this.conf.endYear; i += 100) {
+			var cS = null;
+			var centuryCaption = i;
+			if (i < 0) {
+				cS = this.bcCenturyScale.duplicate(this.timelineLayer);
+			} else if (i == 0) {
+				cS = this.zeroCenturyScale.duplicate(this.timelineLayer);
+				centuryCaption = 1;
+			} else {
+				cS = this.centuryScale.duplicate(this.timelineLayer);
+			}
+			cS.resize(this.scalesSizeProportionPercents, this.scalesSizeProportionPercents);
+			var fins = cS.groupItems["finsAndNumbers"].groupItems["fins"].pathItems;
+			for (var j = 0; j < fins.length; j++ ) {
+				fins[j].strokeWidth = fins[j].strokeWidth * this.scalesSizeProportion*this.conf.timelineMillenniumScaleFinsSizeWidthRatio;
+				fins[j].resize(100, 100*this.conf.timelineMillenniumScaleFinsHeightRatio);
+			}
+
+			var years = cS.groupItems["finsAndNumbers"].groupItems["years"].textFrames;
+			for (var j = 0; j < years.length; j++ ) {
+				years[j].textRange.paragraphs[0].characterAttributes.size = years[j].textRange.paragraphs[0].characterAttributes.size*this.conf.timelineMillenniumScaleYearsFontSizeRatio;
+				years[j].top = years[j].top*this.conf.timelineMillenniumScaleYearYSpaceRatio;
+				years[j].left = years[j].left*this.conf.timelineMillenniumScaleYearXSpaceRatio;
+			}
+
+			var centuryScaleTextFrame = cS.textFrames["century"];
+			centuryScaleTextFrame.contents = centuryCaption;
+			centuryScaleTextFrame.textRange.paragraphs[0].characterAttributes.size = centuryScaleTextFrame.textRange.paragraphs[0].characterAttributes.size*this.conf.timelineMillenniumScaleCenturyFontSizeRatio;
+			centuryScaleTextFrame.top = centuryScaleTextFrame.top*this.conf.timelineMillenniumScaleCenturyYSpaceRatio;
+			centuryScaleTextFrame.left = centuryScaleTextFrame.left*this.conf.timelineMillenniumScaleCenturyXSpaceRatio;
+
+			cS.position = [pX,this.scalePositionX];
+			pX = pX + cS.width;
+		}	
+	},
 	drawScaleCentury: function() {
 		var pX = 0;
 		for (var i = this.conf.startYear; i <= this.conf.endYear; i++) {
@@ -265,33 +351,7 @@ var scale = {
 			yS.position = [pX,this.scalePositionX];
 			pX = pX + yS.width;
 		}	
-	},
-	drawScaleMillennium: function() {
-		var pX = 0;
-		for (var i = this.conf.startYear; i <= this.conf.endYear; i += 100) {
-			var cS = null;
-			var centuryCaption = i;
-			if (i < 0) {
-				cS = this.bcCenturyScale.duplicate(this.timelineLayer);
-			} else if (i == 0) {
-				cS = this.zeroCenturyScale.duplicate(this.timelineLayer);
-				centuryCaption = 1;
-			} else {
-				cS = this.centuryScale.duplicate(this.timelineLayer);
-			}
-			cS.resize(this.scalesSizeProportionPercents, this.scalesSizeProportionPercents);
-			var fins = cS.groupItems["fins"].pathItems;
-			for (var j = 0; j < fins.length; j++ ) {
-				fins[j].strokeWidth = fins[j].strokeWidth * this.scalesSizeProportion;
-			}
-
-			var centuryScaleTextFrame = cS.textFrames["century"];
-			centuryScaleTextFrame.contents = centuryCaption;
-
-			cS.position = [pX,this.scalePositionX];
-			pX = pX + cS.width;
-		}	
-	},
+	}
 }
 
 var builder = {
@@ -356,21 +416,28 @@ var builder = {
 		var start = new Date(0, 0, 0);
 		start.setFullYear(this.conf.startYear-1);
 		var end = new Date(0, 0, 0);
-		end.setFullYear(this.conf.endYear);
+		var endYear = this.conf.endYear;
+		if (this.conf.timelineScaleType == "millennium") endYear--;
+		end.setFullYear(endYear);
 		var allDaysInTimeLine = this.daysBetween(start,end);
 		var daysFromStartToPosition = this.daysBetween(start,now);
 		var dateXPositionInPixels = (this.conf.artboardWidthPixels/allDaysInTimeLine)*daysFromStartToPosition;
-		return dateXPositionInPixels;
+		var position = {
+			pixels: dateXPositionInPixels,
+			daysFromStartToPosition: daysFromStartToPosition,
+			allDaysInTimeLine: allDaysInTimeLine
+		}
+		return position;
 	},
 	drawDetails: function() {
 		var centerX = this.conf.artboardWidthPixels/2;
 		var titleY = this.conf.artboardHeightPixels - this.conf.artboardHeightPixels/30;
-		var title = this.newTextFrame(this.conf.timelineTitleLine, centerX, titleY);
+		var title = this.newTextFrame(lang.titleLine(), centerX, titleY);
 		title.textRange.paragraphs[0].paragraphAttributes.justification = Justification.CENTER;
 		title.textRange.paragraphs[0].characterAttributes.size = 30;
 		var date = new Date();
-		var comment = this.conf.timelineDateLine + ": " + date.getDate()+"-"+(date.getMonth()+1)+"-"+date.getFullYear() + ". ";
-		comment += this.conf.timelineCommentLine;
+		var comment = date.getDate()+"-"+(date.getMonth()+1)+"-"+date.getFullYear() + ". ";
+		comment += lang.commentLine();
 		var commentFrame = this.newTextFrame(comment, centerX, titleY - 40);
 		commentFrame.textRange.paragraphs[0].paragraphAttributes.justification = Justification.CENTER;
 		commentFrame.textRange.paragraphs[0].characterAttributes.size = 15;
@@ -401,12 +468,14 @@ var exportTimeline = {
 	saveFileToPDF: function() {
 		var doc = app.activeDocument;
 		if ( app.documents.length > 0 ) {
-			var file = new File(this.conf.timelineWebName);
+			var file = new File(this.conf.timelineWebName + lang.webNameSuffix());
 			saveOpts = new PDFSaveOptions();
-			saveOpts.compatibility = PDFCompatibility.ACROBAT7;
+			saveOpts.compatibility = PDFCompatibility.ACROBAT5;
+			saveOpts.pDFXStandard = PDFXStandard.PDFXNONE;
 			saveOpts.preserveEditability = false;
 			saveOpts.optimization = true;
 			saveOpts.generateThumbnails = false;
+			saveOpts.enablePlainText = false;
 			doc.saveAs(file, saveOpts);
 		}
 	}
@@ -414,6 +483,8 @@ var exportTimeline = {
 
 conf.readTimelineSetup();
 conf.openIllustratorFile();
+
+lang.conf = conf;
 
 builder.conf = conf;
 builder.scale = scale;
