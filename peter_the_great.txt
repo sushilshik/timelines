@@ -2,9 +2,10 @@
 #startYear:1670
 #endYear:1730
 #timelineResultFileName: Петр Первый
-#timelineTitleLine:Петр Первый
-#timelineDateLine: Сгенерировано 
-#timelineCommentLine: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineTitleLineRu:Петр Первый
+#timelineTitleLineEn:Петр Первый
+#timelineCommentLineRu: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineCommentLineEn: Note: 'd' - means unknown, unclear day of birth, 'm' - unknown, unclear month of birth. If there is no certain information, then set "15" day and "07" month.
 #timelineWebName:peter_the_great
 #timelineVersion: 0.01
 #timelineAuthorLine: Mike

@@ -2,9 +2,10 @@
 #startYear:1930
 #endYear:1947
 #timelineResultFileName:Second World War 1930-1947
-#timelineTitleLine:Вторая мировая война 1930-1947
-#timelineDateLine: Сгенерировано 
-#timelineCommentLine: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineTitleLineRu:Вторая мировая война 1930-1947
+#timelineTitleLineEn:Вторая мировая война 1930-1947 
+#timelineCommentLineRu: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineCommentLineEn: Note: 'd' - means unknown, unclear day of birth, 'm' - unknown, unclear month of birth. If there is no certain information, then set "15" day and "07" month.
 #timelineWebName:ww2_1930-1947
 #timelineVersion: 0.01
 #timelineAuthorLine: Mike

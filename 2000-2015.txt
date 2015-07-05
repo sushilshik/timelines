@@ -2,9 +2,10 @@
 #startYear:2000
 #endYear:2015
 #timelineResultFileName: 2000-2015
-#timelineTitleLine: 2000-2015
-#timelineDateLine: Сгенерировано 
-#timelineCommentLine: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineTitleLineRu: 2000-2015
+#timelineTitleLineEn: 2000-2015
+#timelineCommentLineRu: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineCommentLineEn: Note: 'd' - means unknown, unclear day of birth, 'm' - unknown, unclear month of birth. If there is no certain information, then set "15" day and "07" month.
 #timelineWebName:2000-2015
 #timelineVersion: 0.01
 #timelineAuthorLine: Mike

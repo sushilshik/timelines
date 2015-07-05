@@ -2,9 +2,10 @@
 #startYear:1970
 #endYear:1973
 #timelineResultFileName: Киберсин
-#timelineTitleLine:Киберсин
-#timelineDateLine: Сгенерировано 
-#timelineCommentLine: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineTitleLineRu:Киберсин
+#timelineTitleLineEn:Киберсин
+#timelineCommentLineRu: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineCommentLineEn: Note: 'd' - means unknown, unclear day of birth, 'm' - unknown, unclear month of birth. If there is no certain information, then set "15" day and "07" month.
 #timelineWebName:cybersyn
 #timelineVersion: 0.01
 #timelineAuthorLine: Mike

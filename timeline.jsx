@@ -14,7 +14,7 @@ var conf = {
 	templateFileName: "template.ai",
 	timelineResultFileName: null,
 	timelineWebName: null,
-	datesFileName: "myth.txt",
+	datesFileName: "efremov.txt",
 	timelineLang: "ru",
 	templateObjectsLayerName: "",
 	yearScaleTemplateObjectName: "",
@@ -174,12 +174,13 @@ function newEvent(eventData, builder) {
 
 			path1.height = this.bldr.eventOrPeriodHeight(this.height);
 
+			eIX = this.bldr.timelineDatePosition(this.date);
+
+			this.eventItem.position = [eIX.pixels,this.bldr.scalePositionX+this.eventItem.height];
+
 			eTFcaption.contents = this.caption;
 			eTFdate.contents = this.date;
 
-			eIX = this.bldr.timelineDatePosition(this.date);
-
-			this.eventItem.position = [eIX,this.bldr.scalePositionX+this.eventItem.height];
 			//this.eventItem.uRL = "asdf";
 			//var tagList = this.eventItem.tags;
 			//if (tagList.length == 0) {
@@ -211,15 +212,15 @@ function newPeriod(periodData, builder) {
 			path1.height = this.bldr.eventOrPeriodHeight(this.height);
 			path3.height = this.bldr.eventOrPeriodHeight(this.height);
 
-			pTFcaption.contents = this.caption;
-			pTFdate.contents = this.startDate+"-"+this.endDate;
-
 			pIXStart = this.bldr.timelineDatePosition(this.startDate);
 			pIXEnd = this.bldr.timelineDatePosition(this.endDate);
 
-			this.periodItem.position = [pIXStart,this.bldr.scalePositionX+this.periodItem.height];
-			path2.width = pIXEnd - pIXStart;
-			path3.position = [pIXEnd,path3.top];
+			pTFcaption.contents = this.caption;
+			pTFdate.contents = this.startDate+"-"+this.endDate;
+
+			this.periodItem.position = [pIXStart.pixels,this.bldr.scalePositionX+this.periodItem.height];
+			path2.width = pIXEnd.pixels - pIXStart.pixels;
+			path3.position = [pIXEnd.pixels,path3.top];
 
 		}
 	};
@@ -415,11 +416,18 @@ var builder = {
 		var start = new Date(0, 0, 0);
 		start.setFullYear(this.conf.startYear-1);
 		var end = new Date(0, 0, 0);
-		end.setFullYear(this.conf.endYear);
+		var endYear = this.conf.endYear;
+		if (this.conf.timelineScaleType == "millennium") endYear--;
+		end.setFullYear(endYear);
 		var allDaysInTimeLine = this.daysBetween(start,end);
 		var daysFromStartToPosition = this.daysBetween(start,now);
 		var dateXPositionInPixels = (this.conf.artboardWidthPixels/allDaysInTimeLine)*daysFromStartToPosition;
-		return dateXPositionInPixels;
+		var position = {
+			pixels: dateXPositionInPixels,
+			daysFromStartToPosition: daysFromStartToPosition,
+			allDaysInTimeLine: allDaysInTimeLine
+		}
+		return position;
 	},
 	drawDetails: function() {
 		var centerX = this.conf.artboardWidthPixels/2;

@@ -34,7 +34,7 @@ def job(datesFileName, timelineLang, line, order)
 
 	if order != nil && order.length > 0 && order == "move_pdf" && File.directory?(pdf_goal_dir)
 		timelineWebNameLangSuffix = ""
-		timelineWebNameLangSuffix = "_en" if tmelineLang = "en"
+		timelineWebNameLangSuffix = "_en" if tmelineLang == "en"
 		FileUtils.move(timelineWebName+timelineWebNameLangSuffix+".pdf", pdf_goal_dir)
 	end
 
