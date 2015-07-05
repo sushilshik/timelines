@@ -15,7 +15,7 @@ var conf = {
 	timelineResultFileName: null,
 	timelineWebName: null,
 	datesFileName: "myth.txt",
-	timelineLang: "ru",
+	timelineLang: "en",
 	templateObjectsLayerName: "",
 	yearScaleTemplateObjectName: "",
 	eventTemplateObjectName: "",
