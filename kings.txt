@@ -1,0 +1,105 @@
+﻿//Comment
+#startYear:1500
+#endYear:2040
+#timelineResultFileName: kings
+#timelineTitleLineRu:Цари, императоры, генеральные секретари и президенты России. Годы жизни и годы у власти.
+#timelineTitleLineEn:Tsars, emperors, general secretaries and presidents of Russia. Years of life and rule.
+#timelineCommentLineRu: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineCommentLineEn: Note: 'd' - means unknown, unclear day of birth, 'm' - unknown, unclear month of birth. If there is no certain information, then set "15" day and "07" month.
+#timelineWebName:kings
+#timelineVersion: 0.01
+#timelineAuthorLine: Mike
+#timelineAuthorLink: http://www.nkbtr.org
+#timelineScaleType: millennium
+#artboardWidthPixels: 9000
+#artboardHeightPixels: 800
+#timelineMillenniumScaleYearsFontSizeRatio: 0.5
+#timelineMillenniumScaleCenturyFontSizeRatio: 0.45
+#timelineMillenniumScaleYearXSpaceRatio: 1
+#timelineMillenniumScaleYearYSpaceRatio: 0.7
+#timelineMillenniumScaleCenturyXSpaceRatio: 1
+#timelineMillenniumScaleCenturyYSpaceRatio: 0.5
+#timelineMillenniumScaleSpaceBetweenScaleAndArtboardBottomRatio: 0.35
+#timelineMillenniumScaleFinsHeightRatio: 0.3
+#timelineMillenniumScaleFinsSizeWidthRatio: 0.3
+25.08.1530,28.03.1584, Иван Грозный,Ivan the Terrible, 72, g
+16.01.1547,28.03.1584, Иван Грозный - Царь,Ivan the Terrible - Tsar, 74, g
+31.05.1557,17.01.1598, Фёдор I Иоаннович,Boris Godunov, 64, g
+28.03.1584,17.01.1598, Фёдор I Иоаннович - Царь,Boris Godunov - Tsar, 66, g
+15.07.1557,29.10.1603, Годунова Ирина Фёдоровна (m-),Irina Godunova (m-), 56, g
+17.01.1598,21.02.1598, Годунова Ирина Фёдоровна - Царица,Irina Godunova - Tsaritsa of All Russia, 58, g
+15.07.1552,13.04.1605, Борис Годунов (m-),Boris Godunov (m-), 48, g
+21.02.1598,23.04.1605, Борис Годунов - Царь,Boris Godunov - Tsar, 50, g
+15.07.1589,20.06.1605, Фёдор II Годунов (m-),Feodor II of Russia (m-), 40, g
+23.04.1605,11.06.1605, Фёдор II Годунов - Царь,Feodor II of Russia - Tsar, 42, g
+17.05.1606,, Умер Лжедмитрий I,False Dmitriy I died, 26, g
+11.06.1605,27.05.1606, Лжедмитрий I - Царь,False Dmitriy I - Tsar, 34, g
+15.07.1552,22.09.1612, Василий IV Шуйский (m-),Vasili IV of Russia (m-), 16, g
+29.05.1606,29.07.1610, Василий IV Шуйский - Царь,Vasili IV of Russia - Tsar, 18, g
+09.06.1595,20.05.1648, Владислав IV,Vladislaus IV Vasa, 8, g
+06.09.1610,15.10.1612, Владислав IV - Царь (-d),Vladislaus IV Vasa - Tsar (-d), 10, g
+22.07.1596,23.07.1645, Михаил Фёдорович,Michael I of Russia, 0, g
+03.03.1613,23.07.1645, Михаил Фёдорович - Царь,Michael I of Russia - Tsar, 2, g
+29.03.1629,08.02.1676, Алексей Михайлович,Alexis of Russia, 74, g
+14.07.1645,29.01.1676, Алексей Михайлович - Царь,Alexis of Russia - Tsar, 76, g
+09.06.1661,07.05.1682, Фёдор III Алексеевич,Feodor III of Russia, 66, g
+08.02.1676,07.05.1682, Фёдор III Алексеевич - Царь,Feodor III of Russia - Tsar, 68, g
+09.06.1672,08.02.1725, Петр Первый,Peter the Great, 56, g
+07.05.1682,02.11.1721, Петр Первый - Царь,Peter the Great - Tsar, 58, g
+02.11.1721,08.02.1725, Петр Первый - Император,Peter the Great - Emperor, 60, g
+15.04.1684,17.05.1727, Екатерина I,Catherine I of Russia, 48, g
+08.02.1725,17.05.1727, Екатерина I - Императрица,Catherine I of Russia - Empress, 50, g
+23.10.1715,30.01.1730, Пётр II,Peter II of Russia, 40, g
+18.05.1727,30.01.1730, Пётр II - Император,Peter II of Russia - Emperor, 42, g
+07.02.1693,28.10.1740, Анна Иоанновна,Anna of Russia, 32, g
+30.01.1730,28.10.1740, Анна Иоанновна - Императрица,Anna of Russia - Empress, 34, g
+23.08.1740,16.07.1764, Иван VI,Ivan VI of Russia, 18, g
+28.10.1740,06.12.1741, Иван VI - Император,Ivan VI of Russia - Emperor, 26, g
+29.12.1709,05.01.1762, Елизавета Петровна,Elizabeth of Russia, 8, g
+06.12.1741,05.01.1762, Елизавета Петровна - Императрица,Elizabeth of Russia - Empress, 10, g
+21.02.1728,17.07.1762, Пётр III,Peter III of Russia, 0, g
+05.01.1762,09.07.1762, Пётр III - Император,Peter III of Russia - Emperor, 2, g
+02.05.1729,17.11.1796, Екатерина II,Catherine the Great, 72, g
+09.07.1762,17.11.1796, Екатерина II - Императрица,Catherine the Great - Empress, 74, g
+01.10.1754,23.03.1801, Павел I,Paul I of Russia, 60, g
+17.11.1796,23.03.1801, Павел I - Император,Paul I of Russia - Emperor, 62, g
+23.12.1777,01.12.1825, Александр I,Alexander I of Russia, 52, g
+23.03.1801,01.12.1825, Александр I - Император,Alexander I of Russia - Emperor, 54, g
+06.07.1796,02.03.1855, Николай I,Nicholas I of Russia, 44, g
+01.12.1825,02.03.1855, Николай I - Император,Nicholas I of Russia - Emperor, 46, g
+29.04.1818,13.03.1881, Александр II,Alexander II of Russia, 36, g
+02.03.1855,13.03.1881, Александр II - Император,Alexander II of Russia - Emperor, 38, g
+10.03.1845,01.11.1894, Александр III,Alexander III of Russia, 24, g
+13.03.1881,01.11.1894, Александр III - Император,Alexander III of Russia - Emperor, 30, g
+18.05.1868,17.07.1918, Николай II,Nicholas II of Russia, 16, g
+01.11.1894,15.03.1917, Николай II - Император,Nicholas II of Russia - Emperor, 18, g
+02.11.1861,07.03.1925, Львов Георгий Евгеньевич,Georgy Lvov, 8, g
+15.03.1917,20.07.1917, Львов - председатель В.правительства,Georgy Lvov - prime minister, 10, g
+02.05.1881,11.07.1970, Керенский Александр Фёдорович,Alexander Kerensky, 0, g
+21.07.1917,07.11.1917, Керенский - министр-председатель В.п,Alexander Kerensky - 2nd Minister-Chairman, 2, g
+22.04.1870,21.01.1924, Ленин Владимир Ильич,Vladimir Lenin, 80, g
+08.11.1917,21.01.1924, Ленин - председатель СНК,Lenin - Chairman of the Council of People's Commissars, 82, g
+18.12.1878,05.03.1953, Сталин Иосиф Виссарионович,Joseph Stalin, 70, g
+03.04.1922,16.10.1952, Сталин - Генеральный секретарь,Stalin - General secretary, 72, g
+19.03.1946,05.03.1953, Сталин - Председатель Совета министров,Stalin - Chairman of the Council of Ministers, 74, g
+08.01.1902,14.01.1988, Маленков Георгий Максимилианович,Georgy Malenkov, 62, g
+05.03.1953,08.03.1955, Маленков - Председатель Совета министров,Malenkov - Chairman of the Council of Ministers, 64, g
+15.04.1894,11.09.1971, Хрущёв Никита Сергеевич,Nikita Khrushchev, 54, g
+07.09.1953,14.10.1964, Хрущёв - Первый секретарь ЦК КПСС,Khrushchev - First Secretary of the СС of the CP, 56, g
+19.12.1906,10.11.1982, Брежнев Леонид Ильич,Leonid Brezhnev, 38, g
+14.10.1964,08.04.1966, Брежнев - Первый секретарь ЦК КПСС,Brezhnev - First Secretary of the СС of the CP, 40, g
+08.04.1966,10.11.1982, Брежнев - Генеральный секретарь ЦК КПСС,Brezhnev - General Secretary of the СС of the CP, 48, g
+15.06.1914,09.02.1984, Андропов Юрий Владимирович,Yuri Andropov, 30, g
+12.11.1982,09.02.1984, Андропов - Генеральный секретарь ЦК КПСС,Andropov - General Secretary of the СС of the CP, 32, g
+24.09.1911,10.03.1985, Черненко Константин Устинович,Konstantin Chernenko, 22, g
+13.02.1984,10.03.1985, Черненко - Генеральный секретарь ЦК КПСС,Chernenko - General Secretary of the СС of the CP, 24, g
+02.03.1931,, Горбачёв Михаил Сергеевич,Mikhail Gorbachev, 14, g
+11.03.1985,24.08.1991, Горбачёв - Генеральный секретарь ЦК КПСС,Gorbachev - General Secretary of the СС of the CP, 16, g
+01.02.1931,23.04.2007, Ельцин Борис Николаевич,Boris Yeltsin, 6, g
+10.07.1991,31.12.1999, Ельцин - Президент РФ,Yeltsin - President of Russia, 8, g
+07.10.1952,, Путин Владимир Владимирович,Vladimir Putin, 92, g
+31.12.1999,07.05.2000, Путин - и. о. президента РФ,Putin - Acting President of Russia, 92, g
+07.05.2000,07.05.2008, Путин - Президент РФ,Putin - President of Russia, 100, g
+07.05.2012,, Путин - Президент РФ,Putin - President of Russia, 100, g
+14.09.1965,, Медведев Дмитрий Анатольевич,Dmitry Medvedev, 82, g
+07.05.2008,07.05.2012, Медведев - Президент РФ,Medvedev - President of Russia, 84, g

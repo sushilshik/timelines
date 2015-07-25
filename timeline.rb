@@ -3,8 +3,10 @@ require 'fileutils'
 
 datesFileName = ARGV[0].strip
 timelineLang = ARGV[1].strip
-line = ARGV[2].strip
-order = ARGV[3].strip
+line = ARGV[2]
+line = line.strip if line != nil
+order = ARGV[3]
+order = order.strip if order != nil
 
 def job(datesFileName, timelineLang, line, order)
 

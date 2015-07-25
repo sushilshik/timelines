@@ -1,0 +1,138 @@
+﻿//Comment
+#startYear:1785
+#endYear:1822
+#timelineResultFileName: french_revolution
+#timelineTitleLineRu:Французская революция и наполеоновские войны
+#timelineTitleLineEn:Alexander Pushkin
+#timelineCommentLineRu: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineCommentLineEn: Note: 'd' - means unknown, unclear day of birth, 'm' - unknown, unclear month of birth. If there is no certain information, then set "15" day and "07" month.
+#timelineWebName:french_revolution
+#timelineVersion: 0.01
+#timelineAuthorLine: Mike
+#timelineAuthorLink: http://www.nkbtr.org
+#timelineScaleType: default
+#artboardWidthPixels: 11000
+#artboardHeightPixels: 800
+#timelineDefaultScaleMonthsFontSizeRatio: 1
+#timelineDefaultScaleYearFontSizeRatio: 2
+#timelineDefaultScaleMonthXSpaceRatio: 1
+#timelineDefaultScaleMonthYSpaceRatio: 1
+#timelineDefaultScaleYearXSpaceRatio: 1
+#timelineDefaultScaleYearYSpaceRatio: 1.1
+#timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio: 1.4
+#timelineDefaultScaleFinsHeightRatio: 1
+#timelineDefaultScaleFinsSizeWidthRatio: 1
+18.07.1794,,Казнен Робеспьер,Robespierre executed, 40, g
+14.07.1789,,Взятие Бастилии,Storming of the Bastille, 60, g
+05.05.1821,,Ушел из жизни Наполеон,Napoleon died, 70, g
+07.09.1812,,Бородинское сражение,Battle of Borodino, 50, g
+17.11.1796,,Ушла из жизни Екатерина II,Catherine the Great died, 70, g
+24.03.1801,,Убит Павел I,Paul I assassinated, 30, g
+15.09.1814,15.06.1815,Венский конгресс (d-d),Congress of Vienna (d-d), 60, g
+30.03.1814,,Союзники вошли в Париж,The Allies entered Paris, 100, g
+21.10.1805,,Трафальгарское сражение,Battle of Trafalgar, 60, g
+04.11.1798,03.03.1799,Осада Корфу,Siege of Corfu, 35, g
+18.06.1815,,Битва при Ватерлоо,Battle of Waterloo, 70, g
+16.10.1813,19.10.1813,Битва народов,Battle of the Nations, 70, g
+16.08.1812,18.08.1812,Смоленское сражение,Battle of Smolensk, 60, g
+26.11.1812,29.11.1812,Сражение на Березине,Battle of Berezina, 30, g
+02.12.1805,,Битва под Аустерлицем,Battle of Austerlitz, 40, g
+14.09.1812,20.10.1812,Оккупация Москвы,Capture of Moscow, 40, g
+29.03.1812,,Опала Сперанского,Speransky downfall, 40, g
+15.01.1810,,Сперанский - государственный секретарь (d),Speransky - State Secretary (d), 20, g
+16.10.1793,,Казнена Мария-Антуанетта,Marie Antoinette executed, 15, g
+25.06.1807,09.07.1807,Тильзитский мир,Treaties of Tilsit, 60, g
+17.10.1815,,Наполеон на о. Святой Елены,Napoleon - exile on Saint Helena, 30, g
+10.03.1812,,Издано "Паломничество Чайльд-Гарольда" Байрона,Byron's "Childe Harold's Pilgrimage" published, 100, g
+15.07.1792,15.07.1797,Война первой коалиции (m-m),War of the First Coalition (m-m), 90, g
+15.07.1799,09.02.1801,Война второй коалиции (m-m),War of the Second Coalition (m-m), 90, g
+15.07.1803,15.07.1806,Война третьей коалиции (m-m),War of the Third Coalition (m-m), 90, g
+15.07.1806,15.07.1807,Война четвёртой коалиции (m-m),War of the Fourth Coalition (m-m), 95, g
+09.04.1809,14.10.1809,Война пятой коалиции,War of the Fifth Coalition, 90, g
+15.07.1812,15.07.1814,Война шестой коалиции (m-m),War of the Sixth Coalition (m-m), 90, g
+01.03.1815,08.07.1815,Сто дней (Война седьмой коалиции),Hundred Days (War of the Seventh Coalition), 90, g
+26.02.1815,20.03.1815,Путь от Эльбы до Парижа,From Elba to Paris, 50, g
+30.05.1814,,Наполеон прибыл на Эльбу,Napoleon arrived at Elba, 70, g
+05.10.1789,,Поход на Версаль,Women's March on Versailles, 0, g
+03.12.1792,15.01.1793,Суд над Людовиком XVI,Trial of Louis XVI, 10, g
+21.01.1793,,Казнен Людовик XVI,Louis XVI executed, 0, g
+21.09.1799,08.10.1799,Швейцарский поход Суворова,Suvorov's Swiss expedition, 10, g
+19.05.1798,31.08.1801,Египетский поход,French campaign in Egypt and Syria, 40, g
+18.05.1800,,Ушел из жизни Суворов,Suvorov died, 30, g
+05.04.1799,11.09.1799,Итальянский поход Суворова,Suvorov's Italian expedition, 15, g
+22.12.1790,,Взятие Измаила,Izmail captured, 30, g
+17.02.1797,,Отставка Суворова,Suvorov's retirement, 30, g
+03.11.1794,09.11.1794,Взятие Варшавы,Warsaw was captured, 0, g
+22.09.1789,,Сражение при Рымнике,Battle of Rymnik, 10, g
+12.03.1794,16.11.1794,Восстание Костюшко,Kościuszko Uprising, 10, g
+21.09.1792,26.10.1795,Национальный конвент,National Convention, 85, g
+09.11.1799,,Переворот 18 брюмера,Coup of 18 Brumaire, 0, g
+02.12.1804,,Наполеон - император,Napoleon - emperor, 80, g
+09.02.1801,,Люневильский мир,Treaty of Lunéville, 80, g
+25.07.1815,,Первые испытания паровоза Стефенсона,Stephenson locomotive first run, 30, g
+17.08.1807,,Первые плавание коммерческого парохода Фултона,Fulton first commercial steamboat run, 40, g
+12.06.1798,,Захвачена Мальта,Capture of Malta, 100, g
+01.07.1798,,Высадка в Египте,Landing in Egypt, 90, g
+01.08.1798,03.08.1798,Битва при Абукире,Battle of the Nile, 60, g
+01.09.1798,,Турция объявила войну Франции,Turkey declared war on France, 50, g
+25.07.1798,,Взят Каир,Landing in Egypt, 70, g
+21.07.1798,,Битва у пирамид,Battle of the Pyramids, 80, g
+20.03.1799,21.05.1799,Осада Акры,Siege of Acre, 35, g
+16.04.1799,,Сражение у горы Табор,Battle of Mount Tabor, 25, g
+23.08.1799,08.10.1799,Путь Наполеона из Египта в Францию,Napoleon travelled from Egypt to France, 70, g
+05.09.1800,,Англичане захватили Мальту,Britain captured Malta, 70, g
+28.02.1801,,Донское войской двинулось в Индию,Don Cossacks marched toward India, 60, g
+16.08.1799,19.11.1799,Русско-английская экспедиция в Голландию,Anglo-Russian invasion of Holland, 80, g
+29.04.1796,15.12.1796,Русско-персидская война (-d),Persian Expedition (-d), 80, g
+11.03.1818,,Опубликован "Франкенштейн" Шелли,Shelley's "Frankenstein" was published, 35, g
+25.03.1802,,Амьенский мир,Treaty of Amiens, 90, g
+21.01.1815,,Пушкин читает поэму перед Державиным,Pushkin reciting his poem before Derzhavin, 80, g
+02.08.1802,,Наполеон - пожизненный первый консул,Napoleon - First Consul for Life, 70, g
+22.12.1808,,Премьера Пятой симфонии Бетховена,The Fifth Symphony (Beethoven) was premiered, 60, g
+15.07.1808,,Первое издание Фауста Гёте (m),First part of Goethe's Faust was published (m), 80, g
+15.09.1812,06.10.1812,"Певец во стане русских воинов" Жуковского (d-),Zhukovsky's "A Bard in the Camp of Russian Warriors" (d-), 70, g
+31.10.1803,,Карамзин получил звание историографа,First part of Goethe's Faust was published (m), 80, g
+12.01.1805,,"Песня последнего менестреля" Скотта пуб.,Walter Scott's "The Lay of the Last Minstrel" was published, 70, g
+05.05.1789,,Открыты Генеральные штаты,Estates-General was opened, 100, g
+13.06.1789,09.07.1789,Национальное собрание,Estates-General, 90, g
+09.07.1789,30.09.1791,Национальное учредительное собрание,National Constituent Assembly, 80, g
+13.07.1789,,Национальная гвардия,National Guard, 70, g
+03.03.1793,29.03.1796,Вандейский мятеж,War in the Vendée, 50, g
+24.06.1793,,Конституция I года,French Constitution of 1793, 30, g
+03.09.1791,,Конституция Франции 1791 года,French Constitution of 1791, 60, g
+13.07.1793,,Убит Марат,Marat assassinated, 20, g
+10.08.1792,,Восстание 10 августа,Insurrection of 10 August, 60, g
+31.05.1793,02.06.1793,Восстание 31 мая — 2 июня,Insurrection of 31 May – 2 June, 40, g
+10.08.1792,02.06.1793,Парижская коммуна,Paris Commune, 60, g
+26.08.1789,,Декларация прав человека и гражданина,Declaration of the Rights of Man and of the Citizen, 30, g
+04.08.1789,,Уничтожение дворянских привилегий,The abolition of privileges, 20, g
+17.07.1791,,Расстрел на Марсовом поле,Champ de Mars Massacre, 90, g
+09.03.1796,,Брак Наполеона и Жозефины,Napolеon and Josephine married, 50, g
+03.11.1807,,Коленкур - посол Франции в России,Caulaincourt - French ambassador in Russia, 30, g
+19.05.1802,,Орден Почетного легиона,Legion of Honour, 80, g
+08.02.1803,,Ришелье - градоначальник Одессы,Duc de Richelieu - Governor of Odessa, 50, g
+03.05.1814,,Людовик XVIII въехал в Париж,Louis XVIII entered Paris, 80, g
+19.03.1815,,Людовик XVIII покинул Париж,Louis XVIII quit the capital, 50, g
+08.07.1815,,Людовик XVIII въехал в Париж,Louis XVIII entered Paris, 50, g
+01.01.1804,,Республика Гаити,Republic of Haiti, 50, g
+04.03.1801,,Т. Джефферсон - президент США,Т. Jefferson - President of US, 50, g
+26.09.1789,,Т. Джефферсон отправляется из Франции в США,T. Jefferson move from France to US, 50, g
+30.04.1803,,Франция продала Луизиану США,US acquired Louisiana from France, 40, g
+07.12.1815,,Расстрелян маршал Ней,Marshal Ney executed, 0, g
+14.08.1815,05.09.1816,Несравненная палата,Chambre introuvable, 40, g
+06.08.1806,,Упразднена Священная Римская империя,Dissolution of the Holy Roman Empire, 30, g
+25.10.1806,,Французы взяли Берлин,France captured Berlin, 10, g
+14.10.1806,,Битва при Йене и Ауэрштедте,Battle of Jena–Auerstedt, 20, g
+13.11.1805,,Французы взяли Вену,France captured Vienna, 50, g
+13.05.1809,,Французы взяли Вену,France captured Vienna, 50, g
+15.03.1794,,Талейран отправляется из Англии в США (d),Talleyrand move from England to US (d), 30, g
+15.07.1797,,Талейран - министр иностранных дел,Talleyrand - Minister of Foreign Affairs, 50, g
+07.01.1785,,Воздушный шар пересек Ла-Манш,Balloon crossed the English channel, 50, g
+08.10.1809,,Меттерних - министр иностранных дел Австрийской и.,Metternich - Foreign Minister of the Austrian E., 40, g
+20.01.1785,,Лафайет прибыл в Францию из США,Lafayette arrived in France from USA, 40, g
+22.02.1787,25.05.1787,Ассамблея нотаблей,Assembly of Notables, 50, g
+02.10.1808,,Встреча Наполеона и Гете,Goethe meets Napoleon, 70, g
+20.08.1812,,Кутузов назначен главнокомандующим,Kutuzov was appointed commander-in-chief, 80, g
+16.04.1787,,Выступление Лафайета,Lafayette's speech, 60, g
+21.02.1808,17.09.1809,Русско-шведская война,Finnish War, 100, g
+19.11.1808,,Взята Финляндия,Russia captured Finland, 90, g
