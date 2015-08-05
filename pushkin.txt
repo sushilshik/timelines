@@ -1,0 +1,32 @@
+﻿//Comment
+#startYear:1670
+#endYear:1730
+#timelineResultFileName: pushkin
+#timelineTitleLineRu:Пушкин Александр Сергеевич
+#timelineTitleLineEn:Alexander Pushkin
+#timelineCommentLineRu: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineCommentLineEn: Note: 'd' - means unknown, unclear day of birth, 'm' - unknown, unclear month of birth. If there is no certain information, then set "15" day and "07" month.
+#timelineWebName:pushkin
+#timelineVersion: 0.01
+#timelineAuthorLine: Mike
+#timelineAuthorLink: http://www.nkbtr.org
+#timelineScaleType: default
+#artboardWidthPixels: 9000
+#artboardHeightPixels: 800
+#timelineDefaultScaleMonthsFontSizeRatio: 1
+#timelineDefaultScaleYearFontSizeRatio: 2
+#timelineDefaultScaleMonthXSpaceRatio: 1
+#timelineDefaultScaleMonthYSpaceRatio: 1
+#timelineDefaultScaleYearXSpaceRatio: 1
+#timelineDefaultScaleYearYSpaceRatio: 1.1
+#timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio: 1.4
+#timelineDefaultScaleFinsHeightRatio: 1
+#timelineDefaultScaleFinsSizeWidthRatio: 1
+06.06.1799,, Рождение,Birth, 70, g
+06.06.1811,06.06.1817, Царскосельский лицей????,Tsarskoye Selo Lyceum, 70, g
+15.07.1814,, "Воспоминания в Царском Селе" (m),"Воспоминания в Царском Селе" (m), 60, g
+15.07.1815,15.07.1818, Арзамас (литературное общество) (m),Arzamas Society(m), 80, g
+15.07.1819,15.07.1820, Зелёная лампа (литературное общество) (m),Зелёная лампа (m), 70, g
+15.07.1818,15.07.1820, Руслан и Людмила (m),Ruslan and Ludmila (m), 50, g
+10.02.1837,, Ушел из жизни,Died, 70, g
+03.06.1826,, Ушел из жизни Карамзин,Karamzin Died, 70, g
