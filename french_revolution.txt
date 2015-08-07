@@ -39,18 +39,18 @@
 02.12.1805,,Битва под Аустерлицем,Battle of Austerlitz, 40, g
 14.09.1812,20.10.1812,Оккупация Москвы,Capture of Moscow, 40, g
 29.03.1812,,Опала Сперанского,Speransky downfall, 40, g
-15.01.1810,,Сперанский - государственный секретарь (d),Speransky - State Secretary (d), 20, g
+15.01.1810,,Сперанский - государственный секретарь (d),Speransky - State Secretary (d), 30, g
 16.10.1793,,Казнена Мария-Антуанетта,Marie Antoinette executed, 15, g
-25.06.1807,09.07.1807,Тильзитский мир,Treaties of Tilsit, 60, g
-17.10.1815,,Наполеон на о. Святой Елены,Napoleon - exile on Saint Helena, 30, g
+25.06.1807,09.07.1807,Тильзитский мир,Treaties of Tilsit, 40, g
+17.10.1815,,Наполеон на о. Святой Елены,Napoleon - exile on Saint Helena, 10, g
 10.03.1812,,Издано "Паломничество Чайльд-Гарольда" Байрона,Byron's "Childe Harold's Pilgrimage" published, 100, g
 15.07.1792,15.07.1797,Война первой коалиции (m-m),War of the First Coalition (m-m), 90, g
 15.07.1799,09.02.1801,Война второй коалиции (m-m),War of the Second Coalition (m-m), 90, g
 15.07.1803,15.07.1806,Война третьей коалиции (m-m),War of the Third Coalition (m-m), 90, g
-15.07.1806,15.07.1807,Война четвёртой коалиции (m-m),War of the Fourth Coalition (m-m), 95, g
+15.07.1806,15.07.1807,Война четвёртой коалиции (m-m),War of the Fourth Coalition (m-m), 80, g
 09.04.1809,14.10.1809,Война пятой коалиции,War of the Fifth Coalition, 90, g
 15.07.1812,15.07.1814,Война шестой коалиции (m-m),War of the Sixth Coalition (m-m), 90, g
-01.03.1815,08.07.1815,Сто дней (Война седьмой коалиции),Hundred Days (War of the Seventh Coalition), 90, g
+20.03.1815,08.07.1815,Сто дней (Война седьмой коалиции),Hundred Days (War of the Seventh Coalition), 100, g
 26.02.1815,20.03.1815,Путь от Эльбы до Парижа,From Elba to Paris, 50, g
 30.05.1814,,Наполеон прибыл на Эльбу,Napoleon arrived at Elba, 70, g
 05.10.1789,,Поход на Версаль,Women's March on Versailles, 0, g
@@ -63,14 +63,14 @@
 22.12.1790,,Взятие Измаила,Izmail captured, 30, g
 17.02.1797,,Отставка Суворова,Suvorov's retirement, 0, g
 03.11.1794,09.11.1794,Взятие Варшавы,Warsaw was captured, 0, g
-22.09.1789,,Сражение при Рымнике,Battle of Rymnik, 10, g
+22.09.1789,,Сражение при Рымнике,Battle of Rymnik, 20, g
 12.03.1794,16.11.1794,Восстание Костюшко,Kościuszko Uprising, 10, g
 21.09.1792,26.10.1795,Национальный конвент,National Convention, 85, g
 09.11.1799,,Переворот 18 брюмера,Coup of 18 Brumaire, 0, g
-02.12.1804,,Наполеон - император,Napoleon - emperor, 80, g
-09.02.1801,,Люневильский мир,Treaty of Lunéville, 80, g
+02.12.1804,,Наполеон - император,Napoleon - emperor, 20, g
+09.02.1801,,Люневильский мир,Treaty of Lunéville, 100, g
 25.07.1815,,Первые испытания паровоза Стефенсона,Stephenson locomotive first run, 30, g
-17.08.1807,,Первые плавание коммерческого парохода Фултона,Fulton first commercial steamboat run, 40, g
+17.08.1807,,Первое плавание коммерческого парохода Фултона,Fulton first commercial steamboat run, 30, g
 12.06.1798,,Захвачена Мальта,Capture of Malta, 100, g
 01.07.1798,,Высадка в Египте,Landing in Egypt, 90, g
 01.08.1798,03.08.1798,Битва при Абукире,Battle of the Nile, 60, g
@@ -80,19 +80,19 @@
 20.03.1799,21.05.1799,Осада Акры,Siege of Acre, 35, g
 16.04.1799,,Сражение у горы Табор,Battle of Mount Tabor, 25, g
 23.08.1799,08.10.1799,Путь Наполеона из Египта в Францию,Napoleon travelled from Egypt to France, 70, g
-05.09.1800,,Англичане захватили Мальту,Britain captured Malta, 70, g
+05.09.1800,,Англичане захватили Мальту,Britain captured Malta, 60, g
 28.02.1801,,Донское войской двинулось в Индию,Don Cossacks marched toward India, 60, g
 16.08.1799,19.11.1799,Русско-английская экспедиция в Голландию,Anglo-Russian invasion of Holland, 80, g
 29.04.1796,15.12.1796,Русско-персидская война (-d),Persian Expedition (-d), 0, g
 11.03.1818,,Опубликован "Франкенштейн" Шелли,Shelley's "Frankenstein" was published, 35, g
-25.03.1802,,Амьенский мир,Treaty of Amiens, 90, g
+25.03.1802,,Амьенский мир,Treaty of Amiens, 80, g
 21.01.1815,,Пушкин читает поэму перед Державиным,Pushkin reciting his poem before Derzhavin, 80, g
-02.08.1802,,Наполеон - пожизненный первый консул,Napoleon - First Consul for Life, 70, g
-22.12.1808,,Премьера Пятой симфонии Бетховена,The Fifth Symphony (Beethoven) was premiered, 60, g
-15.07.1808,,Первое издание Фауста Гёте (m),First part of Goethe's Faust was published (m), 80, g
+02.08.1802,,Наполеон - пожизненный первый консул,Napoleon - First Consul for Life, 40, g
+22.12.1808,,Премьера Пятой симфонии Бетховена,The Fifth Symphony (Beethoven) was premiered, 40, g
+15.07.1808,,Первое издание Фауста Гёте (m),First part of Goethe's Faust was published (m), 90, g
 15.09.1812,06.10.1812,"Певец во стане русских воинов" Жуковского (d-),Zhukovsky's "A Bard in the Camp of Russian Warriors" (d-), 70, g
-12.11.1803,,Карамзин получил звание историографа,Karamzin was given the title "Historiographer" (Russia), 80, g
-12.01.1805,,"Песня последнего менестреля" Скотта пуб.,Walter Scott's "The Lay of the Last Minstrel" was published, 70, g
+12.11.1803,,Карамзин получил звание историографа,Karamzin was given the title "Historiographer" (Russia), 20, g
+12.01.1805,,"Песня последнего менестреля" Скотта пуб.,Walter Scott's "The Lay of the Last Minstrel" was published, 0, g
 05.05.1789,,Открыты Генеральные штаты,Estates-General was opened, 100, g
 13.06.1789,09.07.1789,Национальное собрание,Estates-General, 90, g
 09.07.1789,30.09.1791,Национальное учредительное собрание,National Constituent Assembly, 80, g
@@ -101,32 +101,32 @@
 24.06.1793,,Конституция I года,French Constitution of 1793, 30, g
 03.09.1791,,Конституция Франции 1791 года,French Constitution of 1791, 60, g
 13.07.1793,,Убит Марат,Marat assassinated, 20, g
-10.08.1792,,Восстание 10 августа,Insurrection of 10 August, 60, g
+10.08.1792,,Восстание 10 августа,Insurrection of 10 August, 40, g
 31.05.1793,02.06.1793,Восстание 31 мая — 2 июня,Insurrection of 31 May – 2 June, 40, g
 10.08.1792,02.06.1793,Парижская коммуна,Paris Commune, 60, g
 26.08.1789,,Декларация прав человека и гражданина,Declaration of the Rights of Man and of the Citizen, 30, g
-04.08.1789,,Уничтожение дворянских привилегий,The abolition of privileges, 20, g
+04.08.1789,,Уничтожение дворянских привилегий,The abolition of privileges, 40, g
 17.07.1791,,Расстрел на Марсовом поле,Champ de Mars Massacre, 90, g
-09.03.1796,,Брак Наполеона и Жозефины,Napolеon and Josephine married, 60, g
-03.11.1807,,Коленкур - посол Франции в России,Caulaincourt - French ambassador in Russia, 30, g
-19.05.1802,,Орден Почетного легиона,Legion of Honour, 80, g
-08.02.1803,,Ришелье - градоначальник Одессы,Duc de Richelieu - Governor of Odessa, 50, g
+09.03.1796,,Брак Наполеона и Жозефины,Napolеon and Josephine married, 20, g
+03.11.1807,,Коленкур - посол Франции в России,Caulaincourt - French ambassador in Russia, 20, g
+19.05.1802,,Орден Почетного легиона,Legion of Honour, 50, g
+08.02.1803,,Ришелье - градоначальник Одессы,Duc de Richelieu - Governor of Odessa, 10, g
 03.05.1814,,Людовик XVIII въехал в Париж,Louis XVIII entered Paris, 80, g
-19.03.1815,,Людовик XVIII покинул Париж,Louis XVIII quit the capital, 50, g
-08.07.1815,,Людовик XVIII въехал в Париж,Louis XVIII entered Paris, 50, g
-01.01.1804,,Республика Гаити,Republic of Haiti, 50, g
+19.03.1815,,Людовик XVIII покинул Париж,Louis XVIII quit the capital, 0, g
+08.07.1815,,Людовик XVIII въехал в Париж,Louis XVIII entered Paris, 40, g
+01.01.1804,,Республика Гаити,Republic of Haiti, 10, g
 04.03.1801,,Т. Джефферсон - президент США,Т. Jefferson - President of US, 50, g
-26.09.1789,,Т. Джефферсон отправляется из Франции в США,T. Jefferson move from France to US, 50, g
-30.04.1803,,Франция продала Луизиану США,US acquired Louisiana from France, 40, g
+26.09.1789,,Т. Джефферсон отправляется из Франции в США,T. Jefferson move from France to US, 10, g
+30.04.1803,,Франция продала Луизиану США,US acquired Louisiana from France, 0, g
 07.12.1815,,Расстрелян маршал Ней,Marshal Ney executed, 0, g
-14.08.1815,05.09.1816,Несравненная палата,Chambre introuvable, 40, g
+14.08.1815,05.09.1816,Несравненная палата,Chambre introuvable, 20, g
 06.08.1806,,Упразднена Священная Римская империя,Dissolution of the Holy Roman Empire, 30, g
 25.10.1806,,Французы взяли Берлин,France captured Berlin, 10, g
 14.10.1806,,Битва при Йене и Ауэрштедте,Battle of Jena–Auerstedt, 20, g
 13.11.1805,,Французы взяли Вену,France captured Vienna, 50, g
-13.05.1809,,Французы взяли Вену,France captured Vienna, 50, g
+13.05.1809,,Французы взяли Вену,France captured Vienna, 20, g
 15.03.1794,,Талейран отправляется из Англии в США (d),Talleyrand move from England to US (d), 30, g
-15.07.1797,,Талейран - министр иностранных дел,Talleyrand - Minister of Foreign Affairs, 50, g
+15.07.1797,,Талейран - министр иностранных дел,Talleyrand - Minister of Foreign Affairs, 30, g
 07.01.1785,,Воздушный шар пересек Ла-Манш,Balloon crossed the English channel, 50, g
 08.10.1809,,Меттерних - министр иностранных дел Австрийской и.,Metternich - Foreign Minister of the Austrian E., 40, g
 20.01.1785,,Лафайет прибыл в Францию из США,Lafayette arrived in France from USA, 40, g
@@ -135,77 +135,79 @@
 20.08.1812,,Кутузов назначен главнокомандующим,Kutuzov was appointed commander-in-chief, 80, g
 16.04.1787,,Выступление Лафайета,Lafayette's speech, 60, g
 21.02.1808,17.09.1809,Русско-шведская война,Finnish War, 100, g
-19.11.1808,,Присоединена Финляндия,Russia captured Finland, 90, g
+19.11.1808,,Присоединена Финляндия,Russia captured Finland, 50, g
 09.02.1814,14.02.1814,Шестидневная война Наполеона,Six Days' Campaign, 50, g
-02.03.1796,,Наполеон - командующий Итальянской армии,Napoleon - commander-in-chief of the Army of Italy, 70, g
-18.10.1797,,Кампо-Формийский мир,Treaty of Campo Formio, 60, g
-02.11.1795,,Создана Директория,French Directory еstablished, 70, g
+02.03.1796,,Наполеон - командующий Итальянской армии,Napoleon - commander-in-chief of the Army of Italy, 40, g
+18.10.1797,,Кампо-Формийский мир,Treaty of Campo Formio, 0, g
+02.11.1795,,Создана Директория,French Directory еstablished, 60, g
 27.07.1794,,Термидорианский переворот (9 термидора),Thermidorian Reaction, 70, g
-04.09.1797,,Переворот 18 фрюктидора,Coup of 18 Fructidor, 70, g
-10.08.1792,,Восстание 10 августа,10 August, 70, g
+04.09.1797,,Переворот 18 фрюктидора,Coup of 18 Fructidor, 10, g
 21.09.1792,,Отмена монархии,The abolition of the monarchy, 70, g
 25.04.1792,,Написана Марсельеза,"La Marseillaise" was written, 70, g
 14.07.1795,,Марсельеза стала гимном,"La Marseillaise" - national anthem, 70, g
 06.04.1793,,Комитет общественного спасения,Committee of Public Safety, 70, g
-10.03.1793,,Чрезвычайный уголовный суд,Extraordinary criminal tribunal, 70, g
-20.10.1793,,Революционный трибунал,Revolutionary Tribunal, 70, g
-31.05.1795,,Упразднен Революционный трибунал,The Revolutionary Tribunal was suppressed, 70, g
+10.03.1793,,Чрезвычайный уголовный суд,Extraordinary criminal tribunal, 80, g
+20.10.1793,,Революционный трибунал,Revolutionary Tribunal, 50, g
+31.05.1795,,Упразднен Революционный трибунал,The Revolutionary Tribunal was suppressed, 40, g
 05.09.1793,27.07.1794,Эпоха террора,Reign of Terror, 80, g
-01.09.1792,15.09.1792,Сентябрьские убийства (d-d),September Massacres (d-d), 80, g
-15.07.1801,,Конкордат Наполеона,Concordat of 1801, 80, g
-18.01.1801,,Основан Банк Франции,Banque de France established, 80, g
-26.12.1805,,Пресбургский мир,Peace of Pressburg, 80, g
+01.09.1792,15.09.1792,Сентябрьские убийства (d-d),September Massacres (d-d), 30, g
+15.07.1801,,Конкордат Наполеона,Concordat of 1801, 70, g
+18.01.1801,,Основан Банк Франции,Banque de France established, 10, g
+26.12.1805,,Пресбургский мир,Peace of Pressburg, 30, g
 16.10.1805,19.10.1805,Битва под Ульмом,Battle of Ulm, 80, g
-30.03.1805,,Петербургский союзный договор,Treaty of Saint Petersburg, 80, g
-12.07.1806,,Рейнский союз,Confederation of the Rhine, 80, g
-04.11.1813,,Распался Рейнский союз,Confederation of the Rhine collapsed, 80, g
+30.03.1805,,Петербургский союзный договор,Treaty of Saint Petersburg, 10, g
+12.07.1806,,Рейнский союз,Confederation of the Rhine, 60, g
+04.11.1813,,Распался Рейнский союз,Confederation of the Rhine collapsed, 60, g
 26.01.1788,,Основан Сидней,Sydney founded, 80, g
-07.07.1798,,Начало Квазивойны,Quasi-War started, 80, g
-30.09.1800,,Завершение Квазивойны,Quasi-War ended, 80, g
+07.07.1798,,Начало Квазивойны,Quasi-War started, 20, g
+30.09.1800,,Завершение Квазивойны,Quasi-War ended, 70, g
 15.04.1797,16.05.1797,Восстание в Спитхеде,The mutiny at Spithead, 80, g
 12.05.1797,13.06.1797,Восстание в Норе,The mutiny at Nore, 70, g
 02.04.1801,,Копенгагенское сражение,Battle of Copenhagen, 80, g
 02.09.1807,05.09.1807,Бомбардировка Копенгагена,Bombardment of Copenhagen, 70, g
 29.11.1808,,Переезд португальского двора в Бразилию,Transfer of the Portuguese Court to Brazil, 80, g
-21.11.1806,,Берлинский декрет о континентальной блокаде,Berlin Decree installed Continental Blockade, 80, g
-16.05.1806,,Британская блокада портов Европы,British naval blockade, 90, g
+21.11.1806,,Берлинский декрет о континентальной блокаде,Berlin Decree installed Continental Blockade, 60, g
+16.05.1806,,Британская блокада портов Европы,British naval blockade, 50, g
 24.08.1814,,Сожжение Вашингтона,Burning of Washington, 90, g
-07.02.1807,08.02.1807,Битва при Прейсиш-Эйлау,Battle of Eylau, 70, g
-23.03.1808,,Франция взяла Мадрид,France captured Madrid, 90, g
-01.12.1807,,Франция взяла Лиссабон,France captured Lisbon, 90, g
-01.05.1802,,Система лицеев,lycées education system, 90, g
-28.03.1803,,Биметаллический стандарт франка,Franc bimetallic standard, 90, g
-21.03.1804,,Гражданский кодекс,Napoleonic Code, 90, g
-06.08.1813,,Боливар освободил Каракас,Bolívar entered Caracas, 90, g
-18.05.1810,25.05.1810,Майская революция в Буэнос-Айресе,May Revolution in Buenos Aires, 90, g
-11.08.1804,,Создана Австрийская империя,Proclamation of The Austrian Empire, 90, g
-17.03.1804,,Премьера "Вильгельм Телль" Шиллера,The first performance of Schiller’s Wilhelm Tell, 90, g
-26.06.1800,,Вольтов столб,Voltaic pile, 90, g
+07.02.1807,08.02.1807,Битва при Прейсиш-Эйлау,Battle of Eylau, 50, g
+23.03.1808,,Франция взяла Мадрид,France captured Madrid, 0, g
+01.12.1807,,Франция взяла Лиссабон,France captured Lisbon, 80, g
+28.03.1803,,Биметаллический стандарт франка,Franc bimetallic standard, 20, g
+21.03.1804,,Гражданский кодекс,Napoleonic Code, 0, g
+06.08.1813,,Боливар освободил Каракас,Bolívar entered Caracas, 100, g
+18.05.1810,25.05.1810,Майская революция в Буэнос-Айресе,May Revolution in Buenos Aires, 20, g
+11.08.1804,,Создана Австрийская империя,Proclamation of The Austrian Empire, 30, g
+17.03.1804,,Премьера "Вильгельм Телль" Шиллера,The first performance of Schiller’s Wilhelm Tell, 40, g
+26.06.1800,,Вольтов столб,Voltaic pile, 80, g
 30.04.1789,,Вашингтон - первый президент США,Washington - 1st President of US, 50, g
-10.12.1799,,Франция внедрила метрическую систему,France adopted the metric system, 90, g
+10.12.1799,,Франция внедрила метрическую систему,France adopted the metric system, 100, g
 12.09.1801,,Присоединение Грузии к России,Georgia within the Russian Empire, 90, g
-20.06.1803,,Первый полет на воздушном шаре в России,First flight on balloon in Russia, 90, g
-07.08.1803,,Первое русское кругосветное плавание,First Russian circumnavigation, 90, g
-24.06.1812,,В Россию вторглась армия Наполеона,Grande Armée invades Russia, 90, g
-16.12.1812,,Армия Наполеона покинула Россию,Grande Armée left Russian territory, 90, g
+20.06.1803,,Первый полет на воздушном шаре в России,First flight on balloon in Russia, 80, g
+07.08.1803,,Первое русское кругосветное плавание,First Russian circumnavigation, 60, g
+24.06.1812,,В Россию вторглась армия Наполеона,Grande Armée invades Russia, 0, g
+16.12.1812,,Армия Наполеона покинула Россию,Grande Armée left Russian territory, 10, g
 06.02.1819,,Основан Сингапур,Singapore was founded, 90, g
-26.09.1815,,Священный союз,Holy Alliance, 90, g
-11.03.1811,,Движение луддитов,Luddites movement, 90, g
+26.09.1815,,Священный союз,Holy Alliance, 60, g
+11.03.1811,,Движение луддитов,Luddites movement, 0, g
 14.06.1823,,Бэббидж предложил вычислительную машину,Babbage proposed difference engine, 90, g
-17.10.1803,,Британцы взяли Агру,Britain captured Agra, 90, g
-29.01.1805,,Открыт Харьковский университет,The Imperial University in Kharkov was opened, 90, g
-17.11.1804,,Основан Казанский университет,The Kazan University was established, 90, g
+17.10.1803,,Британцы взяли Агру,Britain captured Agra, 70, g
+29.01.1805,,Открыт Харьковский университет,The Imperial University in Kharkov was opened, 70, g
+17.11.1804,,Основан Казанский университет,The Kazan University was established, 40, g
 02.12.1823,,Доктрина Монро,Monroe Doctrine, 80, g
-03.10.1795,05.10.1795,Вандемьерский мятеж,13 Vendémiaire, 90, g
+03.10.1795,05.10.1795,Вандемьерский мятеж,13 Vendémiaire, 100, g
 07.05.1824,,Премьера Симфонии № 9,The Ninth Symphony was premiered, 90, g
-16.09.1810,,Война за независимость Мексики,Mexican War of Independence, 90, g
+16.09.1810,,Война за независимость Мексики,Mexican War of Independence, 10, g
 17.01.1821,,Начало Валашского восстания,Wallachian Uprising started, 90, g
-22.02.1821,,Греческая война за независимость,Greek War of Independence, 90, g
-14.02.1804,,Первое сербское восстание,First Serbian Uprising, 90, g
+22.02.1821,,Греческая война за независимость,Greek War of Independence, 80, g
+14.02.1804,,Первое сербское восстание,First Serbian Uprising, 50, g
 24.04.1815,,Второе сербское восстание,Second Serbian Uprising, 90, g
 29.05.1807,,Янычары свергли султана Селима III,Sultan Selim III deposed by Janissaries, 90, g
-15.09.1813,,Восстание Восьми Триграмм,Eight Trigrams Uprising, 90, g
+15.09.1813,,Восстание Восьми Триграмм,Eight Trigrams Uprising, 80, g
 13.01.1810,,В России учрежден Государственный совет,The State Council was established in Russia, 90, g
-20.09.1802,,В России учреждены министерства,Ministries were established in Russia, 90, g
+20.09.1802,,В России учреждены министерства,Ministries were established in Russia, 30, g
 31.10.1811,,Открыт Царскосельский лицей,The Tsarskoye Selo Lyceum was opened, 90, g
-15.02.1813,,Россия заняла Берлин (d),Russia took Berlin (d), 90, g
+15.02.1813,,Россия заняла Берлин (d),Russia took Berlin (d), 100, g
+01.05.1802,,Во Франции учреждены лицеи,State lycées established in France, 60, g
+04.05.1799,,Британцы взяли Серингапатам,Britain captured Seringapatam, 100, g
+07.04.1795,,Французский франк,French franc, 80, g
+18.12.1795,,Великобритания - закон о "Мятежных собраниях" (d),UK - Seditious Meetings Act (d), 80, g
