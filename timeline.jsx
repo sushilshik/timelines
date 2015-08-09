@@ -158,6 +158,11 @@ var lang = {
 	}
 }
 
+function prepareCaption(line) {
+	line = line.split('###').join(',');
+	return line;
+}
+
 function newEvent(eventData, builder) {
 	return {
 		bldr: builder,
@@ -178,7 +183,7 @@ function newEvent(eventData, builder) {
 
 			this.eventItem.position = [eIX.pixels,this.bldr.scalePositionX+this.eventItem.height];
 
-			eTFcaption.contents = this.caption;
+			eTFcaption.contents = prepareCaption(this.caption);
 			eTFdate.contents = this.date;
 
 			//this.eventItem.uRL = "asdf";
@@ -215,7 +220,7 @@ function newPeriod(periodData, builder) {
 			pIXStart = this.bldr.timelineDatePosition(this.startDate);
 			pIXEnd = this.bldr.timelineDatePosition(this.endDate);
 
-			pTFcaption.contents = this.caption;
+			pTFcaption.contents = prepareCaption(this.caption);
 			pTFdate.contents = this.startDate+"-"+this.endDate;
 
 			this.periodItem.position = [pIXStart.pixels,this.bldr.scalePositionX+this.periodItem.height];
