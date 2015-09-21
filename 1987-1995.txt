@@ -1,0 +1,24 @@
+﻿//Comment
+#startYear:1987
+#endYear:1995
+#timelineResultFileName:USSR, Russian Federation 1987-1995
+#timelineTitleLineRu:USSR, Russian Federation 1987-1995
+#timelineTitleLineEn:USSR, Russian Federation 1987-1995 
+#timelineCommentLineRu: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineCommentLineEn: Note: 'd' - means unknown, unclear day of birth, 'm' - unknown, unclear month of birth. If there is no certain information, then set "15" day and "07" month.
+#timelineWebName:ww2_1930-1947
+#timelineVersion: 0.01
+#timelineAuthorLine: Mike
+#timelineAuthorLink: http://www.nkbtr.org
+#timelineScaleType: default
+#artboardWidthPixels: 9000
+#artboardHeightPixels: 1300
+#timelineDefaultScaleMonthsFontSizeRatio: 1
+#timelineDefaultScaleYearFontSizeRatio: 1
+#timelineDefaultScaleMonthXSpaceRatio: 1
+#timelineDefaultScaleMonthYSpaceRatio: 1
+#timelineDefaultScaleYearXSpaceRatio: 1
+#timelineDefaultScaleYearYSpaceRatio: 1
+#timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio: 1.2
+#timelineDefaultScaleFinsHeightRatio: 1
+#timelineDefaultScaleFinsSizeWidthRatio: 1
