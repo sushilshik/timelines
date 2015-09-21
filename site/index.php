@@ -114,7 +114,7 @@
                         src="http://nkbtr.org/down/timelines/2000-2015.jpg"></a>
                 <div class="caption">
                     <h4>Наше время</h4>
-                    <p>2000-2015</p>
+                    <p>2000-2015. В разработке.</p>
                 </div>
             </div>
         </div>
@@ -124,7 +124,7 @@
                         src="http://nkbtr.org/down/timelines/future_2010-2030.jpg"></a>
                 <div class="caption">
                     <h4>Будущее</h4>
-                    <p>2010-2030</p>
+                    <p>2010-2030. В разработке.</p>
                 </div>
             </div>
         </div>
@@ -144,7 +144,7 @@
                         src="http://nkbtr.org/down/timelines/ancient.jpg"></a>
                 <div class="caption">
                     <h4>Древность и Средние века</h4>
-                    <p>2599 до н. э. - 1599 н. э.</p>
+                    <p>2599 до н. э. - 1599 н. э. В разработке.</p>
                 </div>
             </div>
         </div>
@@ -154,7 +154,7 @@
                         src="http://nkbtr.org/down/timelines/peter_the_great.jpg"></a>
                 <div class="caption">
                     <h4>Петр Первый</h4>
-                    <p>1672-1725</p>
+                    <p>1672-1725. В разработке.</p>
                 </div>
             </div>
         </div>
