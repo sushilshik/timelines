@@ -178,6 +178,16 @@
                 </div>
             </div>
         </div>
+	<div class="row">
+            <div class="thumbnail">
+                <a href="http://nkbtr.org/down/timelines/kings.pdf"><img
+                        src="http://nkbtr.org/down/timelines/kings.jpg"></a>
+                <div class="caption">
+                    <h4>Цари, императоры, генеральные секретари и президенты России. Годы жизни и годы у власти.</h4>
+                    <p>От Ивана Грозного до наших дней.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
