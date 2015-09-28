@@ -2,6 +2,8 @@ String.prototype.splitrim = function(t){
 	return this.split(new RegExp('\s*'+t+'\s*'))
 }
 
+if(typeof JSON!=='object'){JSON={};}(function(){'use strict';function f(n){return n<10?'0'+n:n;}if(typeof Date.prototype.toJSON!=='function'){Date.prototype.toJSON=function(){return isFinite(this.valueOf())?this.getUTCFullYear()+'-'+f(this.getUTCMonth()+1)+'-'+f(this.getUTCDate())+'T'+f(this.getUTCHours())+':'+f(this.getUTCMinutes())+':'+f(this.getUTCSeconds())+'Z':null;};String.prototype.toJSON=Number.prototype.toJSON=Boolean.prototype.toJSON=function(){return this.valueOf();};}var cx,escapable,gap,indent,meta,rep;function quote(string){escapable.lastIndex=0;return escapable.test(string)?'"'+string.replace(escapable,function(a){var c=meta[a];return typeof c==='string'?c:'\\u'+('0000'+a.charCodeAt(0).toString(16)).slice(-4);})+'"':'"'+string+'"';}function str(key,holder){var i,k,v,length,mind=gap,partial,value=holder[key];if(value&&typeof value==='object'&&typeof value.toJSON==='function'){value=value.toJSON(key);}if(typeof rep==='function'){value=rep.call(holder,key,value);}switch(typeof value){case'string':return quote(value);case'number':return isFinite(value)?String(value):'null';case'boolean':case'null':return String(value);case'object':if(!value){return'null';}gap+=indent;partial=[];if(Object.prototype.toString.apply(value)==='[object Array]'){length=value.length;for(i=0;i<length;i+=1){partial[i]=str(i,value)||'null';}v=partial.length===0?'[]':gap?'[\n'+gap+partial.join(',\n'+gap)+'\n'+mind+']':'['+partial.join(',')+']';gap=mind;return v;}if(rep&&typeof rep==='object'){length=rep.length;for(i=0;i<length;i+=1){if(typeof rep[i]==='string'){k=rep[i];v=str(k,value);if(v){partial.push(quote(k)+(gap?': ':':')+v);}}}}else{for(k in value){if(Object.prototype.hasOwnProperty.call(value,k)){v=str(k,value);if(v){partial.push(quote(k)+(gap?': ':':')+v);}}}}v=partial.length===0?'{}':gap?'{\n'+gap+partial.join(',\n'+gap)+'\n'+mind+'}':'{'+partial.join(',')+'}';gap=mind;return v;}}if(typeof JSON.stringify!=='function'){escapable=/[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;meta={'\b':'\\b','\t':'\\t','\n':'\\n','\f':'\\f','\r':'\\r','"':'\\"','\\':'\\\\'};JSON.stringify=function(value,replacer,space){var i;gap='';indent='';if(typeof space==='number'){for(i=0;i<space;i+=1){indent+=' ';}}else if(typeof space==='string'){indent=space;}rep=replacer;if(replacer&&typeof replacer!=='function'&&(typeof replacer!=='object'||typeof replacer.length!=='number')){throw new Error('JSON.stringify');}return str('',{'':value});};}if(typeof JSON.parse!=='function'){cx=/[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;JSON.parse=function(text,reviver){var j;function walk(holder,key){var k,v,value=holder[key];if(value&&typeof value==='object'){for(k in value){if(Object.prototype.hasOwnProperty.call(value,k)){v=walk(value,k);if(v!==undefined){value[k]=v;}else{delete value[k];}}}}return reviver.call(holder,key,value);}text=String(text);cx.lastIndex=0;if(cx.test(text)){text=text.replace(cx,function(a){return'\\u'+('0000'+a.charCodeAt(0).toString(16)).slice(-4);});}if(/^[\],:{}\s]*$/.test(text.replace(/\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g,'@').replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g,']').replace(/(?:^|:|,)(?:\s*\[)+/g,''))){j=eval('('+text+')');return typeof reviver==='function'?walk({'':j},''):j;}throw new SyntaxError('JSON.parse');};}}());;  
+
 function forEach(collection, fn) {
 	var n = collection.length;
 	for(var i=0; i<n; ++i) {
@@ -14,8 +16,8 @@ var conf = {
 	templateFileName: "template.ai",
 	timelineResultFileName: null,
 	timelineWebName: null,
-	datesFileName: "kings.txt",
-	timelineLang: "en",
+	datesFileName: "pushkin.txt",
+	timelineLang: "ru",
 	templateObjectsLayerName: "",
 	yearScaleTemplateObjectName: "",
 	eventTemplateObjectName: "",
@@ -48,26 +50,11 @@ var conf = {
 	timelineMillenniumScaleFinsHeightRatio: "",
 	timelineMillenniumScaleFinsSizeWidthRatio: "",
 	timelineMillenniumScaleYearsFontSizeRatio: "",
+	timelineStyles: {},
 	eventsArray: [],
 	periodsArray: [],
 	artboardWidthPixels: null,
 	artboardHeightPixels: null,
-	openIllustratorFile: function() {
-		var openName = new File(this.templateFileName);
-		userInteractionLevel = UserInteractionLevel.DONTDISPLAYALERTS;
-		this.myDocument = app.open(openName);
-	},
-	saveIllustratorFile: function() {
-	    var doc = app.activeDocument;
-	    if ( app.documents.length > 0 ) {
-			var saveName = new File(this.timelineResultFileName+".ai");
-			doc.saveAs(saveName);
-	    }
-	},
-	close: function() {
-		//this.saveIllustratorFile();
-		app.quit();
-	},
 	readTimelineSetup: function() {  
 		fileObj = File( this.datesFileName );  
 		var fileArray, thisLine, csvArray;  
@@ -88,7 +75,18 @@ var conf = {
 	setupVal: function(name, line) {
 		var r = new RegExp("^#"+name+":\s*(.*)\s*$");
 		if (line.match(r) != null && line.match(r).length == 2) {
-			this[name] = line.match(r)[1].replace(/^\s+|\s+$/gm,'');;
+			this[name] = line.match(r)[1].replace(/^\s+|\s+$/gm,'');
+		}
+	},
+	setupStylesVal: function(name, line) {
+		var r = new RegExp("^#"+name+":\s*(.*)\s*$");
+		if (line.match(r) != null) {
+			//$.write(line.match(r).length);
+			//$.write(">>> " + line.match(r)[1]);
+		}
+		if (line.match(r) != null && line.match(r).length == 2) {
+			var style = JSON.parse(line.match(r)[1]);
+			this[name][style.name] = style;
 		}
 	},
 	parseSetupLine: function (line) {
@@ -126,6 +124,7 @@ var conf = {
 				this.setupVal("timelineMillenniumScaleFinsHeightRatio", line);
 				this.setupVal("timelineMillenniumScaleFinsSizeWidthRatio", line);
 				this.setupVal("timelineMillenniumScaleYearsFontSizeRatio", line);
+				this.setupStylesVal("timelineStyles", line);
 			} else {
 				csvArray = line.splitrim(',');  
 				if (csvArray[1].length != 0) {
@@ -171,6 +170,7 @@ function newEvent(eventData, builder) {
 		height: parseFloat(eventData[4]),
 		kalend: eventData[5],
 		eventItem: null,
+		style: eventData[6],
 		draw: function() {
 			this.eventItem = this.bldr.eventItem.duplicate(this.bldr.timelineLayer);
 			var path1 = this.eventItem.groupItems["eventItemInternalGroup"].pathItems["path1"];
@@ -206,6 +206,7 @@ function newPeriod(periodData, builder) {
 		height: parseFloat(periodData[4]),
 		kalend: periodData[5],
 		periodItem: null,
+		style: periodData[6],
 		draw: function() {
 			this.periodItem = this.bldr.periodItem.duplicate(this.bldr.timelineLayer);
 			var path1 = this.periodItem.pathItems["path1"];
@@ -226,6 +227,28 @@ function newPeriod(periodData, builder) {
 			this.periodItem.position = [pIXStart.pixels,this.bldr.scalePositionX+this.periodItem.height];
 			path2.width = pIXEnd.pixels - pIXStart.pixels;
 			path3.position = [pIXEnd.pixels,path3.top];
+
+			if (typeof this.style != 'undefined' && 
+					this.style != null && 
+					this.style.length > 0 && 
+					this.bldr.conf.timelineStyles[this.style] != null) {
+				var stl = this.bldr.conf.timelineStyles[this.style];
+				if (typeof stl.strokeWidth != 'undefined' && 
+						stl.strokeWidth != null && 
+						stl.strokeWidth.length > 0 ) {
+					path2.strokeWidth = parseInt(stl.strokeWidth);
+				}
+				if (typeof stl.strokeColor != 'undefined' && 
+						stl.strokeColor != null && 
+						stl.strokeColor.length > 0 ) {
+					var c = stl.strokeColor.split(",");
+					var rgbColor = new RGBColor();
+					rgbColor.red = parseInt(c[0]);
+					rgbColor.green = parseInt(c[1]);
+					rgbColor.blue = parseInt(c[2]);
+					path2.strokeColor = rgbColor;
+				}
+			}
 
 		}
 	};
@@ -370,6 +393,22 @@ var builder = {
 	minEventOrPeriodLegsHeight: 50,
 	eventsAndPeriodsObjectsArray: [],
 	//scaleHeight: null,
+	openIllustratorFile: function() {
+		var openName = new File(this.conf.templateFileName);
+		userInteractionLevel = UserInteractionLevel.DONTDISPLAYALERTS;
+		this.conf.myDocument = app.open(openName);
+	},
+	saveIllustratorFile: function() {
+	    var doc = app.activeDocument;
+	    if ( app.documents.length > 0 ) {
+			var saveName = new File(this.conf.timelineResultFileName+".ai");
+			doc.saveAs(saveName);
+	    }
+	},
+	close: function() {
+		//this.saveIllustratorFile();
+		app.quit();
+	},
 	prepareObjects: function() {
 		this.timelineLayer = this.conf.myDocument.layers["timelineLayer"];  
 		this.templateLayer = this.conf.myDocument.layers["templateLayer"];  
@@ -486,31 +525,47 @@ var exportTimeline = {
 	}
 };
 
-conf.readTimelineSetup();
-conf.openIllustratorFile();
+var work = {
+	conf: null,
+	lang: null,
+	builder: null,
+	scale: null,
+	exportTimeline: null,
+	make: function() {
+		this.conf.readTimelineSetup();
 
-lang.conf = conf;
+		this.lang.conf = conf;
 
-builder.conf = conf;
-builder.scale = scale;
-builder.prepareObjects();
+		this.builder.conf = conf;
+		this.builder.scale = scale;
+		this.builder.openIllustratorFile();
+		this.builder.prepareObjects();
 
-scale.conf = conf;
-scale.timelineLayer = builder.timelineLayer;
-scale.drawScale();
+		this.scale.conf = conf;
+		this.scale.timelineLayer = builder.timelineLayer;
+		this.scale.drawScale();
 
-//builder.ight = scale.scaleHeight;
-builder.scalePositionX = scale.scalePositionX;
+		//builder.ight = scale.scaleHeight;
+		this.builder.scalePositionX = scale.scalePositionX;
 
-builder.drawArtboard();
-builder.drawEventsAndPeriods();
-builder.drawDetails();
-builder.finishingTouch();
+		this.builder.drawArtboard();
+		this.builder.drawEventsAndPeriods();
+		this.builder.drawDetails();
+		this.builder.finishingTouch();
 
-exportTimeline.conf = conf;
-exportTimeline.saveFileToPDF();
+		this.exportTimeline.conf = conf;
+		this.exportTimeline.saveFileToPDF();
 
-conf.close();
+		this.builder.close();
+	}
+}
+
+work.conf = conf;
+work.lang = lang;
+work.builder = builder;
+work.scale = scale;
+work.exportTimeline = exportTimeline;
+work.make();
 
 //Vivodit preduprejdenie o starom stile v datah
 //Ukazivat kalendar u dati
