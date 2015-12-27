@@ -1,0 +1,148 @@
+﻿//Comment
+#startYear:2013
+#endYear:2015
+#timelineResultFileName: ukraine_euromaidan
+#timelineTitleLineRu: Украина - Евромайдан
+#timelineTitleLineEn: Ukraine - Euromaidan
+#timelineCommentLineRu: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineCommentLineEn: Note: 'd' - means unknown, unclear day of birth, 'm' - unknown, unclear month of birth. If there is no certain information, then set "15" day and "07" month.
+#timelineWebName: ukraine_euromaidan
+#timelineVersion: 0.01
+#timelineAuthorLine: Mike
+#timelineAuthorLink: http://www.nkbtr.org
+#timelineScaleType: default
+#artboardWidthPixels: 8000
+#artboardHeightPixels: 1000
+#timelineDefaultScaleMonthsFontSizeRatio: 0.3
+#timelineDefaultScaleYearFontSizeRatio: 0.3
+#timelineDefaultScaleMonthXSpaceRatio: 1.02
+#timelineDefaultScaleMonthYSpaceRatio: 0.2
+#timelineDefaultScaleYearXSpaceRatio: 1.1
+#timelineDefaultScaleYearYSpaceRatio: 0.25
+#timelineDefaultScaleSpaceBetweenScaleAndArtboardBottomRatio: 0.35
+#timelineDefaultScaleFinsHeightRatio: 0.3
+#timelineDefaultScaleFinsSizeWidthRatio: 0.3
+16.03.2014,, Референдум о статусе Крыма,Crimean status referendum, 60, g
+12.04.2014,05.07.2014, Противостояние в Славянске, Siege of Sloviansk, 30, g
+21.11.2013,27.02.2014, Евромайдан, Euromaidan, 30, g
+21.02.2014,, Янукович покинул Киев, Yanukovych left Kiev, 100, g
+25.02.2014,, Янукович покинул Украину, Yanukovych's escape, 95, g
+23.05.2015,, Убит А. Мозговой, A. Mozgovoy killed, 90, g
+07.04.2014,, Образована ДНР, DNR was declared, 50, g
+28.04.2014,, Образована ЛНР, LPR was established, 60, g
+#28.04.2015,, Остановлен мотопробег "на Берлин!", LPR was established, 90, g
+01.01.2015,, Убит А. Беднов ("Бэтмен"), Killed A. Bednov ("Batman"), 50, g
+24.05.2014,18.05.2015, Новороссия, Novorossiya, 80, g
+30.05.2015,, М. Саакашвили - глава Одесской области, M. Saakashvili - governor of Odessa Oblast, 70, g
+17.07.2015,, М. Гайдар - заместитель глава Одесской области, M. Gaidar - vice-governor of Odessa Oblast, 50, g
+02.05.2014,, Пожар в Доме профсоюзов, Trade Unions House fire, 1, g
+17.07.2014,, Катастрофа Boeing 777 в Донецкой области, Malaysia Airlines Boeing shot down in Donetsk Oblast, 70, g
+13.05.2014,, Украина перекрыла Северо-Крымский канал, Ukraine blocks North Crimean channel, 10, g
+26.10.2014,, Досрочные выборы в Верховную Раду, Ukrainian early parliamentary election, 20, g
+23.12.2014,, Отмена внеблокового статуса Украины, Ukraine Ends ‘Nonaligned’ Status, 60, g
+07.06.2014,, Порошенко - президент, Poroshenko - president, 1, g
+25.05.2014,, Внеочередные выборы президента Украины, Ukrainian presidential election, 70, g
+24.08.2014,, Распущена Верховная Рада, Dissolution of Verkhovna Rada, 1, g
+22.07.2014,, Роспуск фракции КПУ Верховной Радой, KPU faction was dissolved by Verkhovna Rada, 30, g
+22.03.2014,, Роспуск УНА-УНСО, UNA-UNSO was dissolved by Rada, 20, g
+12.12.2015,, Убит П.Л. Дрёмов, Killed P. Dremov, 40, g
+24.03.2014,, Убит А.И. Музычко, Killed O. Muzychko, 10, g
+27.02.2014,, Яценюк - премьер-министр, Yatsenyuk - Prime Minister, 40, g
+#27.11.2014,, Яценюк - премьер-министр, Yatsenyuk - Prime Minister, 40, g
+23.02.2014,, Турчинов - и. о. президента, Turchynov - acting President, 50, g
+27.02.2014,, Аваков - министр внутренних дел, Avakov - Minister of Internal Affairs, 80, g
+23.11.2013,, Основан "Правый сектор", Right Sector was founded, 100, g
+02.03.2014,, Коломойский назначен главой Днепропетровской обл., Kolomoyskyi - Governor of Dnipropetrovsk Oblast, 70, g
+24.03.2015,, Уволен Коломойский, Kolomoyskyi - dismissed, 10, g
+24.11.2015,, Турция сбила российский самолет, Turkey shotdown russian aircraft, 20, g
+30.09.2015,, Военная операция России в Сирии, Russian military intervention in the Syrian Civil War, 30, g
+13.11.2015,, Теракт в Париже, Terrorist attacks in Paris, 60, g
+27.09.2015,, Первый авиаудар Франции в Сирии, France's first Syria airstrike, 40, g
+08.07.2014,, Савченко в СИЗО в Воронеже, Savchenko in a detention center in city of Voronezh, 45, g
+17.06.2014,, Убиты журналисты ВГТРК под Луганском, Russian journalists killed near Luhansk, 50, g
+15.05.2014,, Батальон "Айдар" (d), Aidar Battalion (d), 40, g
+05.05.2014,, Батальон "Азов", Azov Battalion, 50, g
+06.07.2014,, Стрелков - военный комендант Донецка, Strelkov - military Commandant of Donetsk, 10, g
+14.08.2014,, Стрелков - подал в отставку, Strelkov - dismissed, 20, g
+21.02.2014,, Беркут выведен из Киева, Berkut moved out of Kiev, 20, g
+25.02.2014,, Беркут распущен, Berkut dissolution, 10, g
+30.11.2013,, Разгон палаточного городка Евромайдана, Police dispersed all protesters from Maidan , 90, g
+16.01.2014,, Законы 16 января, Anti-protest laws in Ukraine , 10, g
+28.01.2014,, Отставка правительства Украины, Ukraine government dissolved , 1, g
+01.12.2013,, В Киеве крупные беспорядки, Series of riots in Kiev, 80, g
+08.12.2013,, Снесен памятник Ленину в Киеве, Protesters toppled the statue to Lenin in Kiev, 60, g
+20.08.2014,, В Москве на высотке повесили флаг Украины, In Moscow Ukrainian flag was put on landmark skyscraper , 10, g
+07.07.2014,, Пресс-конференция Кургиняна в Донецке, Press-Conference of Kurginyan in Donetsk, 1, g
+13.04.2014,13.06.2014, Противостояние в Мариуполе, Battle of Mariupol, 85, g
+15.07.2014,28.07.2014, Дебальцево занята Украиной (d-), Ukraine took Debaltseve, 90, g
+22.01.2015,18.02.2015, ДНР и ЛНР заняли Дебальцево, DPR and LPR took Debaltseve, 70, g
+06.06.2014,, В Раде Ляшко напал на российских журналистов, Lyashko attacked russian journalists in Rada, 60, g
+11.11.2015,, Ярош сложил с себя полномочия лидера Правого сектора, Yarosh resigned as Right Sector leader, 70, g
+05.09.2014,, Минский протокол, Minsk Protocol, 90, g
+12.02.2015,, Второе минское соглашение, Minsk II, 90, g
+01.09.2015,, Прекращение огня на Донбассе, Donbass - ceasefire regime, 90, g
+07.11.2015,, Завершился отвод тяжелых вооружений на Донбассе, Donbass - withdrawal of heavy weapon finished, 80, g
+26.05.2014,27.05.2014, Бои в Донецком аэропорту I, First Battle of Donetsk Airport, 90, g
+28.09.2014,21.01.2015, Бои в Донецком аэропорту II, Second Battle of Donetsk Airport, 90, g
+24.03.2014,, Приостановлено участие РФ в Большой восьмерке, Russia was suspended from G8, 1, g
+16.09.2015,, Украина запрещает полеты некоторых Р. авиакомпаний в страну, Ukraine bans some Russian's airlines, 60, g
+25.10.2015,, РФ запрещает полеты У. авиакомпаний в страну, Russia bans Ukraine's airlines, 1, g
+#25.11.2015,, Украина запрещает транзитные полеты Р. авиакомпаний, Ukraine bans Russian's transit flights, 50, g
+26.12.2014,, VISA и MasterCard прекратили обслуживание в Крыму, Visa and MasterCard stop supporting bank cards in Crimea, 30, g
+31.10.2015,, Катастрофа A321 над Синайским полуостровом, A321 crash above the northern Sinai, 100, g
+06.11.2015,, Приостановлено авиационное сообщение с Египтом, Russia suspends flights to Egypt, 90, g
+28.11.2015,, Запрещены чартеры в Турцию, Russia bans charter flights to Turkey, 10, g
+05.08.2015,, Прекращен контракт на покупку Мистралей, The Mistral deal was canceled, 20, g
+06.08.2014,, Российское продовольственное эмбарго, Russian embargo on imports of the agricultural products, 50, g
+17.03.2014,, Первые санкции, First sanctions against individuals### businesses and officials from Russia, 90, g
+24.02.2015,, Возбуждено административное дело в отношении постановщика "Тангейзера", The director of a production of Tannhauser charged by authorities, 30, g
+01.10.2015,, Закон о банкротстве физических лиц, Law on individuals’ bankruptcy, 20, g
+08.07.2015,25.08.2015, Обвал фондового рынка Китая, Chinese stock market crash, 10, g
+21.12.2014,, В Донецке арестованы Шапинов### Фирсов и Муратова, Shapinov### Firsov### Muratova arrested in Donetsk, 10, g
+27.02.2015,, Убит Немцов, Nemtsov killed, 10, g
+02.11.2014,, Всеобщие выборы в ЛНР и ДНР, Donbass general elections, 10, g
+21.11.2013,, 33 р./$### 110 $/барр., 33 r./$### 110 $/bbl, -5, g
+18.03.2014,, 36### 107, 36### 107, -5, g
+05.09.2014,, 37### 101, 37### 101, -5, g
+02.11.2014,, 43### 85, 43### 85, -5, g
+16.12.2014,, 69### 60, 69### 60, -5, g
+11.02.2015,, 66### 55, 66### 55, -5, g
+27.05.2015,, 50### 62, 50### 62, -5, g
+25.08.2015,, 70### 43, 70### 43, -5, g
+20.10.2015,, 62### 489, 62### 49, -5, g
+08.12.2015,, 69### 40, 69### 40, -5, g
+18.12.2015,, 70### 37, 70### 37, -5, g
+13.01.2015,, Обстрел автобуса под Волновахой, Volnovakha bus attack, 20, g
+20.07.2014,06.09.2014, Бои за Горловку,Battle of Horlivka, 60, g
+18.03.2014,, Крым в составе России, Treaty of Accession of Crimea, 30, g
+18.02.2014,20.02.2014, Обострение противостояния, Aggravation of confrontation, 60, g
+10.02.2015,02.07.2015, Бои за Широкино, Shyrokyne standoff, 50, g
+22.01.2014,, Первые захваты администраций в регионах, RSA occupations started, 70, g
+11.12.2013,, Беркут штурмует Майдан, Assault of Euromaidan by Berkut, 50, g
+04.12.2013,, Глава МИД Германии посетил Евромайдан, German Foreign Minister visit Maidan, 70, g
+11.12.2013,, Виктория Нуланд посетила Евромайдан, Victoria Nuland visit Maidan, 40, g
+02.01.2015,, Армения вступила в Таможенный союз, Armenia acceded to Eurasian Customs Union, 40, g
+24.07.2015,, Киргизия вступила в Таможенный союз, Kyrgyzstan acceded to Eurasian Customs Union, 40, g
+31.05.2013,, Украина заключила меморандум о сотрудничестве с Таможенным союзом, Ukraine signs memorandum with Eurasian Economic Commission, 20, g
+04.09.2015,, Распущена компартия Казахстана, Communist Party liquidated in Kazakhstan, 70, g
+21.03.2014,, Политическая часть соглашения об ассоциации с ЕС, Political part of Ukraine–EC Union Association Agreement, 40, g
+27.06.2014,, Экономическая часть соглашения об ассоциации с ЕС, Economic part of Ukraine–EC Union Association Agreement , 20, g
+16.09.2014,, Украина ратифицировала соглашения об ассоциации с ЕС, Ukraine ratifies EU association agreement, 30, g
+12.09.2014,, Отложено создание зоны свободной торговли Украина-ЕС до 2016, EU-Ukraine integration trade pact postponed till 2016, 40, g
+#01.11.2014,, Украина приступила к реализации основных положений Соглашения, Provisional application of important parts of the EU-Ukraine Association Agreement, 40, g
+18.09.2013,, Кабмин Украины одобрил проект Соглашения об ассоциации с ЕС, Ukrainian government approved a draft of the agreement, 10, g
+21.11.2013,, Кабмин Украины приостановил подготовку к ассоциации с ЕС, Ukraine Suspends Preparations for EU Association Agreement, 20, g
+#02.03.2014,, Возобновлена подготовка к подписанию Соглашения, Communist Party liquidated in Kazakhstan, 40, g
+28.11.2013,29.11.2013, Вильнюсский саммит Восточного партнёрства, Eastern Partnership summit Vilnius, 10, g
+#11.12.2015,, Полностью ратифицировано Соглашения об ассоциации с ЕС, Communist Party liquidated in Kazakhstan, 40, g
+12.03.2015,, Исландия отозвала заявку о вступлении в ЕС, Iceland withdraws EU accession bid, 40, g
+01.07.2013,, Хорватия вступила в ЕС, Croatia joined EC, 10, g
+29.07.2013,, Россия запретила ввоз продукции компании Roshen, Russia banned the import of Roshen chocolate, 40, g
+18.06.2015,, Подписан меморандум по Северному потоку II, Nord Stream expansion agreement, 60, g
+01.12.2014,, Россия отказалась от строительства Южного потока, South Stream cancelled by Russia, 70, g
+17.04.2014,, Европарламент против строительства Южного потока, EU Parliament against South Stream, 20, g
+27.01.2015,, Определен маршрут Турецкого потока, EU Parliament against South Stream, 60, g
+03.06.2014,, Еврокоммиссия требует остановить работы по Южному потоку, EU Commission tells to stop work on South Stream, 35, g
+03.12.2015,, Приостановка Турецкого потока, Turkish Stream suspended, 50, g
+#20.12.2013,, Освобожден Ходорковский, Khodorkovsky was released, 10, g
+#28.10.2015,, Украина заблокировала Ж.-д. связь с Крымом, Ukraine blocks rail travel with Crimea, 10, g

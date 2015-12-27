@@ -16,8 +16,8 @@ var conf = {
 	templateFileName: "template.ai",
 	timelineResultFileName: null,
 	timelineWebName: null,
-	datesFileName: "pushkin.txt",
-	timelineLang: "ru",
+	datesFileName: "ukraine_euromaidan.txt",
+	timelineLang: "en",
 	templateObjectsLayerName: "",
 	yearScaleTemplateObjectName: "",
 	eventTemplateObjectName: "",
@@ -386,7 +386,7 @@ var builder = {
 	conf: null,
 	scale: null,
 	timelineLayer: null,
-	templateLayer: null,
+	//templateLayer: null,
 	eventItem: null,
 	periodItem: null,
 	headShift: 0.15,
@@ -411,7 +411,7 @@ var builder = {
 	},
 	prepareObjects: function() {
 		this.timelineLayer = this.conf.myDocument.layers["timelineLayer"];  
-		this.templateLayer = this.conf.myDocument.layers["templateLayer"];  
+		//this.templateLayer = this.conf.myDocument.layers["templateLayer"];  
 		this.eventItem = this.conf.myDocument.groupItems["eventItem"];
 		this.periodItem = this.conf.myDocument.groupItems["periodItem"];
 		for (var i = 0; i < this.conf.eventsArray.length; i++) {
@@ -487,8 +487,8 @@ var builder = {
 		commentFrame.textRange.paragraphs[0].characterAttributes.size = 15;
 	},
 	finishingTouch: function() {
-		this.templateLayer.visible = true;
-		this.templateLayer.remove();
+		//this.templateLayer.visible = true;
+		//this.templateLayer.remove();
 	}
 }
 
