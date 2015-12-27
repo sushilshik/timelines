@@ -96,7 +96,17 @@
         </div>
 
         <br>
-
+        <div class="row">
+            <div class="thumbnail">
+                <a href="http://nkbtr.org/down/timelines/ukraine_euromaidan.pdf"><img
+                        src="http://nkbtr.org/down/timelines/ukraine_euromaidan.jpg"></a>
+                <div class="caption">
+                    <h4>Украина &mdash; Евромайдан</h4>
+                    <p>2013-2015</p>
+                    <!--<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>-->
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="thumbnail">
                 <a href="http://nkbtr.org/down/timelines/ww2_1930-1947.pdf"><img
