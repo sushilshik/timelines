@@ -34,7 +34,7 @@
 01.01.2015,, Убит А. Беднов ("Бэтмен"), Killed A. Bednov ("Batman"), 50, g
 24.05.2014,18.05.2015, Новороссия, Novorossiya, 80, g
 30.05.2015,, М. Саакашвили - глава Одесской области, M. Saakashvili - governor of Odessa Oblast, 70, g
-17.07.2015,, М. Гайдар - заместитель глава Одесской области, M. Gaidar - vice-governor of Odessa Oblast, 50, g
+17.07.2015,, М. Гайдар - заместитель главы Одесской области, M. Gaidar - vice-governor of Odessa Oblast, 50, g
 02.05.2014,, Пожар в Доме профсоюзов, Trade Unions House fire, 1, g
 17.07.2014,, Катастрофа Boeing 777 в Донецкой области, Malaysia Airlines Boeing shot down in Donetsk Oblast, 70, g
 13.05.2014,, Украина перекрыла Северо-Крымский канал, Ukraine blocks North Crimean channel, 10, g

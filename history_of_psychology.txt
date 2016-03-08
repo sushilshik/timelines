@@ -1,0 +1,27 @@
+﻿//Comment
+#startYear:1850
+#endYear:2020
+#timelineResultFileName: history_of_psychology
+#timelineTitleLineRu: История психологии
+#timelineTitleLineEn: History of Psychology
+#timelineCommentLineRu: Примечание: 'd' - означает неизвестный, спорный день месяца в дате, 'm' - неизвестный, спорный месяц года в дате. Если нет данных о точном дне - ставится 15-ое число и соответственно для месяца - 07 (июль).
+#timelineCommentLineEn: Note: 'd' - means unknown, unclear day of birth, 'm' - unknown, unclear month of birth. If there is no certain information, then set "15" day and "07" month.
+#timelineWebName:history_of_psychology
+#timelineVersion: 0.01
+#timelineAuthorLine: Mike
+#timelineAuthorLink: http://www.nkbtr.org
+#timelineScaleType: millennium
+#artboardWidthPixels: 9000
+#artboardHeightPixels: 800
+#timelineMillenniumScaleYearsFontSizeRatio: 0.5
+#timelineMillenniumScaleCenturyFontSizeRatio: 0.45
+#timelineMillenniumScaleYearXSpaceRatio: 1
+#timelineMillenniumScaleYearYSpaceRatio: 0.7
+#timelineMillenniumScaleCenturyXSpaceRatio: 1
+#timelineMillenniumScaleCenturyYSpaceRatio: 0.5
+#timelineMillenniumScaleSpaceBetweenScaleAndArtboardBottomRatio: 0.35
+#timelineMillenniumScaleFinsHeightRatio: 0.3
+#timelineMillenniumScaleFinsSizeWidthRatio: 0.3
+#timelineStyles: {"name": "blueLine", "strokeColor": "0,128,255","strokeWidth":"3"}
+#timelineStyles: {"name": "redLine", "strokeColor": "255,51,51","strokeWidth":"3"}
+#25.08.1530,28.03.1584, Иван Грозный,Ivan the Terrible, 72, g,
